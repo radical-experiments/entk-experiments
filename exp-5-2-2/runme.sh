@@ -1,5 +1,4 @@
 #!/bin/bash
-
 export RADICAL_ENTK_VERBOSE=INFO
 export RADICAL_ENTK_PROFILE=True
 export RADICAL_PILOT_PROFILE=True

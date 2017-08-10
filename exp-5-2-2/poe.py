@@ -9,7 +9,7 @@ app_coll = {
     
     "sleep": {
                 'executable': '/bin/sleep',
-                'arguments': 1,
+                'arguments': 10,
                 'cores': 1
             }
 }
@@ -25,8 +25,8 @@ res_coll = {
 
     "local.localhost": {
                 'walltime': 60,
-                'schema': '',
-                'project': ''
+                'schema': None,
+                'project': None
             }
 }
 
@@ -42,7 +42,7 @@ def get_pipeline():
     # Create a Stage 1
     s1 = Stage()
 
-    for cnt in range(256):
+    for cnt in range(2):
 
         # Create a Task object according to the app_name
         t1 = Task()
@@ -72,7 +72,7 @@ def get_pipeline():
         s2.add_tasks(t1)
 
     # Add Stage to the Pipeline
-    #p.add_stages(s2)
+    p.add_stages(s2)
 
     return p
 
@@ -80,7 +80,7 @@ def get_pipeline():
 if __name__ == '__main__':
 
     if len(sys.argv) != 4:
-        print 'Missing arguments. Execution cmd: python poe.py <num_pipes> <app_name> <resource_name>'
+        print 'Missing arguments. Execution cmd: python poe.py <num_pipes> <app_name>'
         sys.exit(1)
 
     num_pipes = int(sys.argv[1])
@@ -100,7 +100,7 @@ if __name__ == '__main__':
 
             'resource': res_name,
             'walltime': res_coll[res_name]['walltime'],
-            'cores': num_pipes*2,
+            'cores': num_pipes,
             'project': res_coll[res_name]['project'],
             'schema': res_coll[res_name]['schema']
     }
