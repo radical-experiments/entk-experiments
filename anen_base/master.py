@@ -1,4 +1,4 @@
-import os
+import os, sys
 import rpy2
 import rpy2.robjects as robjects
 import traceback
@@ -15,6 +15,48 @@ with a total resource reservation of 32 cores. Once completed, we determine the 
 tasks using the EnTK profiler.
 '''
 
+def test_initial_config(d):
+
+    possible_keys = [   'file.forecast', 'file.observation','output.AnEn',
+                        'stations.ID', 'cores', 'test.ID.start', 'test.ID.end',
+                        'train.ID.start', 'train.ID.end', 'rolling',
+                        'members.size'
+                    ]
+
+    all_ok = True
+
+    for keys in possible_keys:
+
+        if keys not in d:
+
+            print 'Expected key %s not in initial_config dictionary'%keys
+            all_ok = False
+
+
+    return all_ok
+
+
+def process_initial_config(initial_config):
+
+    initial_config['stations.ID'] = ' '.join([str(int(k)) for k in list(initial_config['stations.ID'])])
+
+    possible_keys = [   'file.forecast', 'file.observation','output.AnEn',
+                        'cores', 'test.ID.start', 'test.ID.end',
+                        'train.ID.start', 'train.ID.end', 'rolling',
+                        'members.size'
+                    ]
+
+    for keys in possible_keys:
+        initial_config[keys] = initial_config[keys][0]
+
+
+    for key, val in initial_config.iteritems():
+        if type(val) not in [str,int, float]:
+            sys.exit(1)
+
+
+    return initial_config
+
 
 if __name__ == '__main__':
 
@@ -25,79 +67,94 @@ if __name__ == '__main__':
 
     # -------------------------- Stage 1 ---------------------------------------
     # Read initial configuration from R function
-    with open('setup.r', 'r') as f:
+    with open('setup.R', 'r') as f:
         R_code = f.read()
     initial_config = STAP(R_code, 'initial_config')
     config = initial_config.initial_config(False)
     initial_config = dict(zip(config.names, list(config)))
 
 
+    if not test_initial_config(initial_config):
+        sys.exit(1)
+
+    initial_config = process_initial_config(initial_config)
+    
+
     #################################################
     # additional conversion from for the dictionary #
     #################################################
 
-
+    
     # First stage corresponds to the AnEn computation
-    s = Stage()
+    s1 = Stage()
 
     # List to catch all the uids of the AnEn tasks
     anen_task_uids = list()
 
-    for ind in range(4):
+    for ind in range(1):
 
         # Create a new task
-        t = Task()
+        t1 = Task()
         # task executable
-        t.executable    = ['canalogs']       
+        t1.executable    = ['canalogs']       
         # All modules to be loaded for the executable to be detected
-        t.pre_exec      = [ 'module load gcc',      
+        t1.pre_exec      = [ 'module load gcc',      
                             'module load boost',    
                             'export PATH=/home1/04672/tg839717/git/CAnalogsV2/build:$PATH']
         # Number of cores for this task
-        t.cores         = 16
+        t1.cores         = int(initial_config['cores'])
         # List of arguments to the executable      
-        t.arguments     = [ '-L','-l',
-                            '-d', '<unknown>',
-                            '-o', '<unknown>',
-                            '--stations-ID','<unknown>',
-                            '--number-of-cores', '16',
-                            '--test-ID-start', '<unknown>',
-                            '--test-ID-end', '<unknown>',
-                            '--train-ID-start', '<unknown>',
-                            '--train-ID-end', '<unknown>']
+        t1.arguments     = [ '-N','-p',
+                            '--forecast-nc', initial_config['file.forecast'],
+                            '--observation-nc', initial_config['file.observation'],
+                            '-o', initial_config['output.AnEn'],
+                            '--stations-ID',initial_config['stations.ID'],
+                            '--number-of-cores', initial_config['cores'],
+                            '--test-ID-start', initial_config['test.ID.start'],
+                            '--test-ID-end', initial_config['test.ID.end'],
+                            '--train-ID-start', initial_config['train.ID.start'],
+                            '--train-ID-end', initial_config['train.ID.end'],
+                            '--rolling', initial_config['rolling'],
+                            '--members-size',initial_config['members.size']]
 
         # Add this task to our stage
-        s.add_tasks(t)
-
-        # Add the processed task id to our list. 
-        # The format of the task is "radical.entk.task.0000" and we only
-        # need "task.0000"
-        task_uids.append('.'.join(t.uid.split('.')[2:]))
+        s1.add_tasks(t1)
 
     # Add the stage to our pipeline
-    p.add_stages(s)
+    p.add_stages(s1)
     # --------------------------------------------------------------------------
 
 
     # -------------------------- Stage 2 ---------------------------------------
-    # Read evaluation functions from R function
-    with open('evaluation.R', 'r') as f:
-        R_code = f.read()
-    evaluation = STAP(R_code, 'evaluation')
-    stations.ID = evaluation.evaluation()
+    
 
     # Third stage corresponds to evaluation of interpolated data
-    s = Stage()
+    s2 = Stage()
 
-    t = Task()
-    t.executable    = []
-    t.pre_exec      =  []
-    t.cores         = 1
-    t.arguments     = []
+    t2 = Task()
+    t2.executable    = ['python']
+    t2.pre_exec      =  ['module load R',
+                        'module load Rstudio',
+                        'module load Rstats',
+                        'module load pyton',
+                        'source $HOME/ve_rpy/bin/activate']
+    t2.cores         = 1
+    t2.arguments     = [ 'evaluation.py', 
+                        '--file_observation', initial_config['file.observation'],
+                        '--file_AnEn', initial_config['file.observation'],
+                        '--stations_ID', initial_config['stations.ID'],
+                        '--test_ID_start', initial_config['test.ID.start'],
+                        '--test_ID_end', initial_config['test.ID.end'],
+                        '--nflts', '8',
+                        '--nrows', '100',
+                        '--ncols', '100'
+                    ]
+    t2.upload_input_data = ['./evaluation.py', './evaluation.R']
+    t2.link_input_data = ['$PIPELINE_%s_STAGE_%s_TASK_%s/%s'%(p.uid, s1.uid, t1.uid, initial_config['output.AnEn'])]
 
-    s.add_tasks(t)
+    s2.add_tasks(t2)
 
-    p.add_stages(s)
+    p.add_stages(s2)
     # --------------------------------------------------------------------------
 
 
