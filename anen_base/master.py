@@ -15,6 +15,22 @@ with a total resource reservation of 32 cores. Once completed, we determine the 
 tasks using the EnTK profiler.
 '''
 
+
+resource_key = {
+    
+                    'xsede.stampede': {
+                                    [   'module load netcdf',    
+                                        'export PATH=/home1/04672/tg839717/git/CAnalogsV2/build:$PATH']
+                                },
+
+                    'xsede.supermic': {
+                                    [   'module load netcdf',      
+                                        'export PATH=/home/whu/git/CAnalogsV2/build:$PATH']
+                                }
+
+                }
+
+
 def test_initial_config(d):
 
     possible_keys = [   'file.forecast', 'file.observation','output.AnEn',
@@ -98,9 +114,7 @@ if __name__ == '__main__':
         # task executable
         t1.executable    = ['canalogs']       
         # All modules to be loaded for the executable to be detected
-        t1.pre_exec      = [ 'module load gcc',      
-                            'module load boost',    
-                            'export PATH=/home1/04672/tg839717/git/CAnalogsV2/build:$PATH']
+        t1.pre_exec      = [ resource_key['xsede.supermic']]
         # Number of cores for this task
         t1.cores         = int(initial_config['cores'])
         # List of arguments to the executable      
