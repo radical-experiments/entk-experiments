@@ -77,10 +77,10 @@ compute.triangle.errors <- function(control.coords.x, control.coords.y,
   return(mat.errors)
 }
 
-evaluate <- function(current_stage, file_observation, file_AnEn, stations_ID,
+evaluate <- function(file_observation, file_AnEn, stations_ID,
                      test_ID_start, test_ID_end, nflts, nrows, ncols,
                      threshold_RMSE = 2, num_neighbors = 3, pixels_growth = 10, verbose = F) {
-  # this function will be called by the master.py script to evaluate the AnEn results
+  # this function will be called by the .py script to evaluate the AnEn results
   # of the current stage
   #
   # This function does the following steps for the current stage
