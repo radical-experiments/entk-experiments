@@ -1,7 +1,11 @@
-from radical.entk import Pipeline, Stage, Task, AppManager, ResourceManager, Profiler
 import os
-from glob import glob
+import rpy2
+import rpy2.robjects as robjects
 import traceback
+
+from glob import glob
+from rpy2.robjects.packages import STAP
+from radical.entk import Pipeline, Stage, Task, AppManager, ResourceManager, Profiler
 
 '''
 EnTK 0.6 script - Analog Ensemble application
@@ -20,6 +24,19 @@ if __name__ == '__main__':
 
 
     # -------------------------- Stage 1 ---------------------------------------
+    # Read initial configuration from R function
+    with open('setup.r', 'r') as f:
+        R_code = f.read()
+    initial_config = STAP(R_code, 'initial_config')
+    config = initial_config.initial_config(False)
+    initial_config = dict(zip(config.names, list(config)))
+
+
+    #################################################
+    # additional conversion from for the dictionary #
+    #################################################
+
+
     # First stage corresponds to the AnEn computation
     s = Stage()
 
@@ -63,22 +80,12 @@ if __name__ == '__main__':
 
 
     # -------------------------- Stage 2 ---------------------------------------
-    # Second stage corresponds to interpolation of data to the entire domain
-    s = Stage()
+    # Read evaluation functions from R function
+    with open('evaluation.R', 'r') as f:
+        R_code = f.read()
+    evaluation = STAP(R_code, 'evaluation')
+    stations.ID = evaluation.evaluation()
 
-    t = Task()
-    t.executable    = []
-    t.pre_exec      =  []
-    t.cores         = 1
-    t.arguments     = []
-
-    s.add_tasks(t)
-
-    p.add_stages(s)
-    # --------------------------------------------------------------------------
-
-
-    # -------------------------- Stage 3 ---------------------------------------
     # Third stage corresponds to evaluation of interpolated data
     s = Stage()
 
