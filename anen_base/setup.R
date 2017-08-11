@@ -9,8 +9,8 @@ initial_config <- function (verbose = F) {
   nrows <- 100
   ncols <- 100
   
-  file.forecast <- '/home1/04672/tg839717/data/Temperature_NAM/Forecasts_NAM_C.nc'
-  file.observation <- '/home1/04672/tg839717/data/Temperature_NAM/Analysis_NAM_R.nc'
+  file.forecast <- '/home/whu/data/Temperature_NAM/Forecasts_NAM_C.nc'
+  file.observation <- '/home/whu/data/Temperature_NAM/Analysis_NAM_R.nc'
   
   test.ID.start <- 700
   test.ID.end <- 799
@@ -20,7 +20,7 @@ initial_config <- function (verbose = F) {
   rolling <- -2
   cores <- 16
   
-  output.prefix <- paste('/home1/04672/tg839717/data/Temperature_NAM/stage_', current_stage, '_', sep = '')
+  output.prefix <- paste('/work/whu/', current_stage, '_', sep = '')
   output.AnEn <- paste(output.prefix, 'anen.nc', sep = '')
   #output.computed.pixels <- paste(output.prefix, 'computed_pixels.rdata', sep = '')
   stations.ID <- sample.int(nrows * ncols, init.num.pixels)
