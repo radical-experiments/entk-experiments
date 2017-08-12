@@ -90,18 +90,23 @@ evaluate <- function(file_observation, file_AnEn, stations_ID,
   # - compute errors for the current AnEn results
   # - determine the pixels to compute the next stage
   #
-  if (!require(sp)) {
-    install.packages('sp', repos='http://cran.us.r-project.org')
-    library(sp)
-  }
-  if (!require(ncdf4)) {
-    install.packages('ncdf4', repos='http://cran.us.r-project.org')
-    library(ncdf4)
-  }
-  if (!require(raster)) {
-    install.packages('raster', repos='http://cran.us.r-project.org')
-    library(raster)
-  }
+  print('Install and load libraries')
+  #if (!require(sp)) {
+    #install.packages('sp', repos='http://cran.us.r-project.org', destdir = '/home/vivek91/')
+  #}
+  #if (!require(ncdf4)) {
+    #install.packages('ncdf4', repos='http://cran.us.r-project.org', destdir = '/home/vivek91/')
+  #}
+  #if (!require(raster)) {
+    #install.packages('Rcpp', repos='http://cran.us.r-project.org', destdir = '/home/vivek91/')
+    #install.packages('raster', repos='http://cran.mirrors.hoobly.com', destdir = '/home/vivek91/')
+  #}
+
+  library(sp)
+  library(ncdf4)
+  library(raster)
+
+  print('Libraries loaded')
   
   rast_base <- raster(nrows = nrows, ncols = ncols, xmn = 0.5, xmx = ncols+.5, ymn = 0.5, ymx = nrows+.5)
   
@@ -111,11 +116,13 @@ evaluate <- function(file_observation, file_AnEn, stations_ID,
   ##################
   #
   # read observations
+  print(paste('Read observations: ', file_observation, sep = ''))
   nc <- nc_open(file_observation)
   obs <- ncvar_get(nc, 'Data')
   nc_close(nc)
   
   # read AnEn results
+  print(paste('Read AnEn results: ', file_AnEn, sep = ''))
   nc <- nc_open(file_AnEn)
   analogs <- ncvar_get(nc, 'Data')
   nc_close(nc)
@@ -125,14 +132,17 @@ evaluate <- function(file_observation, file_AnEn, stations_ID,
   y <- ceiling(stations_ID / ncols) + 1
   
   # compute averaged values across all members
-  num_computed_pixels <- dim(analogs)[2]
+  num_computed_pixels <- dim(analogs)[1]
   analogs <- apply(analogs, c(1, 2, 3), mean, na.rm = T)
   
   # loop through days and flts to compute errors
+  print('Compute errors')
   mat_RMSE <- matrix(NA, nrow = test_ID_end - test_ID_start + 1, ncol = nflts)
   rownames(mat_RMSE) <- paste(test_ID_start : test_ID_end)
   colnames(mat_RMSE) <- paste(1 : nflts)
-  for (day in test_ID_start : test_ID_end) {
+  for (index in 1 : (test_ID_end - test_ID_start + 1)) {
+    day = index + test_ID_start - 1
+    print(paste('Processing day ', day, ' (', test_ID_start, '~', test_ID_end, ')', sep = ''))
     for (flt in 1 : nflts) {
       
       # get observations for the day and flt
@@ -141,9 +151,9 @@ evaluate <- function(file_observation, file_AnEn, stations_ID,
       
       # interpolate the AnEn prediction for the day and flt
       if (num_computed_pixels < nrows * ncols) {
-        rast_int <- nearest_neighbor_interpolation(x, y, analogs[, day, flt], rast_base, n = num_neighbors)
+        rast_int <- nearest_neighbor_interpolation(x, y, analogs[, index, flt], rast_base, n = num_neighbors)
       } else {
-        rast_int = rasterize(cbind(x, y), rast_base, analogs[, day, flt])
+        rast_int = rasterize(cbind(x, y), rast_base, analogs[, index, flt])
       }
       
       # compute error
@@ -155,7 +165,9 @@ evaluate <- function(file_observation, file_AnEn, stations_ID,
   ###################
   # evaluate errors #
   ###################
-  if (mean(mat_RMSE) > threshold.RMSE) {
+  print('Evaluate errors')
+  print(paste('threashold.RMSE is ', threshold_RMSE, sep = ''))
+  if (mean(mat_RMSE) > threshold_RMSE) {
     # compute more pixels
     stations_ID <- sample.int(nrows * ncols, num_computed_pixels + pixels_growth)
     

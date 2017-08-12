@@ -136,7 +136,7 @@ if __name__ == '__main__':
                                 '--rolling', int(initial_config['rolling']),
                                 '--members-size',int(initial_config['members.size'])])
 
-            print t1.arguments
+            #print t1.arguments
 
             # Add this task to our stage
             s1.add_tasks(t1)
@@ -159,11 +159,12 @@ if __name__ == '__main__':
     t2.executable    = ['python']
     t2.pre_exec      =  [   'module load python/2.7.7/GCC-4.9.0',
                             'source $HOME/ve_rpy2/bin/activate',
-                            'module load r']
+                            'module load r',
+                            'module load netcdf']
     t2.cores         = 1
     t2.arguments     = [ 'evaluation.py', 
                         '--file_observation', initial_config['file.observation'],
-                        '--file_AnEn', initial_config['file.observation'],
+                        '--file_AnEn', initial_config['output.AnEn'],
                         '--stations_ID', initial_config['stations.ID'],
                         '--test_ID_start', initial_config['test.ID.start'],
                         '--test_ID_end', initial_config['test.ID.end'],
@@ -184,7 +185,7 @@ if __name__ == '__main__':
     res_dict = {
 
             'resource': 'xsede.supermic',
-            'walltime': 20,
+            'walltime': 60,
             'cores': 20,
             'project': 'TG-MCB090174',
             #'queue': 'development',

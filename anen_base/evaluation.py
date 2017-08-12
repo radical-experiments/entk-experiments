@@ -19,6 +19,11 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+    raw_station_id = args.stations_ID.split(',')
+    proc_station_id = list()
+
+    for val in raw_station_id:
+         proc_station_id.append(int((val.strip().replace("[","").replace("u","").replace("]","").replace("'","")).strip()))
 
     # Read evaluation functions from R function
     with open('evaluation.R', 'r') as f:
@@ -26,10 +31,10 @@ if __name__ == '__main__':
     evaluation = STAP(R_code, 'evaluation')
     stations.ID = evaluation.evaluate(    args.file_observation,
                                             args.file_AnEn,
-                                            args.stations_ID,
-                                            args.test_ID_start, args.test_ID_end,
-                                            args.nflts,
-                                            args.nrows, args.ncols)
+                                            robjects.IntVector(proc_station_id),
+                                            float(args.test_ID_start), float(args.test_ID_end),
+                                            int(args.nflts),
+                                            int(args.nrows), int(args.ncols))
 
     if len(stations.ID) is not 0:
         print stations.ID
