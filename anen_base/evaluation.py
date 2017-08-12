@@ -24,14 +24,12 @@ if __name__ == '__main__':
     with open('evaluation.R', 'r') as f:
         R_code = f.read()
     evaluation = STAP(R_code, 'evaluation')
-    stations.ID = evaluation.evaluation(    args.file_observation,
+    stations.ID = evaluation.evaluate(    args.file_observation,
                                             args.file_AnEn,
                                             args.stations_ID,
                                             args.test_ID_start, args.test_ID_end,
                                             args.nflts,
                                             args.nrows, args.ncols)
 
-    if len(stations.ID) == 0:
-        return None
-    else:
+    if len(stations.ID) is not 0:
         print stations.ID

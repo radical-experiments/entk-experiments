@@ -157,7 +157,9 @@ if __name__ == '__main__':
 
     t2 = Task()
     t2.executable    = ['python']
-    t2.pre_exec      =  ['module load r']
+    t2.pre_exec      =  [   'module load python/2.7.7/GCC-4.9.0',
+                            'source $HOME/ve_rpy2/bin/activate',
+                            'module load r']
     t2.cores         = 1
     t2.arguments     = [ 'evaluation.py', 
                         '--file_observation', initial_config['file.observation'],
