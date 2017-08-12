@@ -18,15 +18,15 @@ tasks using the EnTK profiler.
 
 resource_key = {
     
-                    'xsede.stampede': {
+                    'xsede.stampede': 
                                     [   'module load netcdf',    
                                         'export PATH=/home1/04672/tg839717/git/CAnalogsV2/build:$PATH']
-                                },
+                                ,
 
-                    'xsede.supermic': {
+                    'xsede.supermic': 
                                     [   'module load netcdf',      
                                         'export PATH=/home/whu/git/CAnalogsV2/build:$PATH']
-                                }
+                                
 
                 }
 
@@ -54,7 +54,7 @@ def test_initial_config(d):
 
 def process_initial_config(initial_config):
 
-    initial_config['stations.ID'] = ' '.join([str(int(k)) for k in list(initial_config['stations.ID'])])
+    initial_config['stations.ID'] = ["%s"%str(int(k)) for k in list(initial_config['stations.ID'])]
 
     possible_keys = [   'file.forecast', 'file.observation','output.AnEn',
                         'cores', 'test.ID.start', 'test.ID.end',
@@ -67,7 +67,7 @@ def process_initial_config(initial_config):
 
 
     for key, val in initial_config.iteritems():
-        if type(val) not in [str,int, float]:
+        if type(val) not in [str,int, float, list]:
             sys.exit(1)
 
 
@@ -75,6 +75,7 @@ def process_initial_config(initial_config):
 
 
 if __name__ == '__main__':
+
 
 
     # Our application currently will contain only one pipeline
@@ -107,32 +108,41 @@ if __name__ == '__main__':
     # List to catch all the uids of the AnEn tasks
     anen_task_uids = list()
 
-    for ind in range(1):
+    try:
+        for ind in range(1):
 
-        # Create a new task
-        t1 = Task()
-        # task executable
-        t1.executable    = ['canalogs']       
-        # All modules to be loaded for the executable to be detected
-        t1.pre_exec      = [ resource_key['xsede.supermic']]
-        # Number of cores for this task
-        t1.cores         = int(initial_config['cores'])
-        # List of arguments to the executable      
-        t1.arguments     = [ '-N','-p',
-                            '--forecast-nc', initial_config['file.forecast'],
-                            '--observation-nc', initial_config['file.observation'],
-                            '-o', initial_config['output.AnEn'],
-                            '--stations-ID',initial_config['stations.ID'],
-                            '--number-of-cores', initial_config['cores'],
-                            '--test-ID-start', initial_config['test.ID.start'],
-                            '--test-ID-end', initial_config['test.ID.end'],
-                            '--train-ID-start', initial_config['train.ID.start'],
-                            '--train-ID-end', initial_config['train.ID.end'],
-                            '--rolling', initial_config['rolling'],
-                            '--members-size',initial_config['members.size']]
+            # Create a new task
+            t1 = Task()
+            # task executable
+            t1.executable    = ['canalogs']       
+            # All modules to be loaded for the executable to be detected
+            t1.pre_exec      = resource_key['xsede.supermic']
+            # Number of cores for this task
+            t1.cores         = int(initial_config['cores'])
+            # List of arguments to the executable      
+            t1.arguments     = [ '-N','-p',
+                                '--forecast-nc', initial_config['file.forecast'],
+                                '--observation-nc', initial_config['file.observation'],
+                                '-o', initial_config['output.AnEn'], '--stations-ID']
 
-        # Add this task to our stage
-        s1.add_tasks(t1)
+            t1.arguments.extend(initial_config['stations.ID'])
+
+            t1.arguments.extend([
+                                '--number-of-cores', int(initial_config['cores']),
+                                '--test-ID-start', int(initial_config['test.ID.start']),
+                                '--test-ID-end', int(initial_config['test.ID.end']),
+                                '--train-ID-start', int(initial_config['train.ID.start']),
+                                '--train-ID-end', int(initial_config['train.ID.end']),
+                                '--rolling', int(initial_config['rolling']),
+                                '--members-size',int(initial_config['members.size'])])
+
+            print t1.arguments
+
+            # Add this task to our stage
+            s1.add_tasks(t1)
+
+    except Exception as ex:
+        print ex
 
     # Add the stage to our pipeline
     p.add_stages(s1)
@@ -147,11 +157,7 @@ if __name__ == '__main__':
 
     t2 = Task()
     t2.executable    = ['python']
-    t2.pre_exec      =  ['module load R',
-                        'module load Rstudio',
-                        'module load Rstats',
-                        'module load pyton',
-                        'source $HOME/ve_rpy/bin/activate']
+    t2.pre_exec      =  ['module load r']
     t2.cores         = 1
     t2.arguments     = [ 'evaluation.py', 
                         '--file_observation', initial_config['file.observation'],
@@ -164,7 +170,7 @@ if __name__ == '__main__':
                         '--ncols', '100'
                     ]
     t2.upload_input_data = ['./evaluation.py', './evaluation.R']
-    t2.link_input_data = ['$PIPELINE_%s_STAGE_%s_TASK_%s/%s'%(p.uid, s1.uid, t1.uid, initial_config['output.AnEn'])]
+    t2.link_input_data = ['%s'%(initial_config['output.AnEn'])]
 
     s2.add_tasks(t2)
 
@@ -175,11 +181,11 @@ if __name__ == '__main__':
     # Create a dictionary to describe our resource request
     res_dict = {
 
-            'resource': 'xsede.stampede',
-            'walltime': 60,
-            'cores': 64,
+            'resource': 'xsede.supermic',
+            'walltime': 20,
+            'cores': 20,
             'project': 'TG-MCB090174',
-            'queue': 'development',
+            #'queue': 'development',
             'schema': 'gsissh'
 
     }
