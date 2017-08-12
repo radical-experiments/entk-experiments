@@ -13,7 +13,7 @@ initial_config <- function (verbose = F) {
   file.observation <- '/home/whu/data/Temperature_NAM/Analysis_NAM_R.nc'
   
   test.ID.start <- 700
-  test.ID.end <- 799
+  test.ID.end <- 702
   train.ID.start <- 0
   train.ID.end <- 699
   members.size <- 20
