@@ -108,42 +108,46 @@ if __name__ == '__main__':
     # List to catch all the uids of the AnEn tasks
     anen_task_uids = list()
 
-    try:
-        for ind in range(1):
+    stations_subset = list()
 
-            # Create a new task
-            t1 = Task()
-            # task executable
-            t1.executable    = ['canalogs']       
-            # All modules to be loaded for the executable to be detected
-            t1.pre_exec      = resource_key['xsede.supermic']
-            # Number of cores for this task
-            t1.cores         = int(initial_config['cores'])
-            # List of arguments to the executable      
-            t1.arguments     = [ '-N','-p',
-                                '--forecast-nc', initial_config['file.forecast'],
-                                '--observation-nc', initial_config['file.observation'],
-                                '-o', initial_config['output.AnEn'], '--stations-ID']
+    for ind in range(10):
 
-            t1.arguments.extend(initial_config['stations.ID'])
+        # Create a new task
+        t1 = Task()
+        # task executable
+        t1.executable    = ['canalogs']       
+        # All modules to be loaded for the executable to be detected
+        t1.pre_exec      = resource_key['xsede.supermic']
+        # Number of cores for this task
+        t1.cores         = int(initial_config['cores'])
+        # List of arguments to the executable      
+        t1.arguments     = [ '-N','-p',
+                            '--forecast-nc', initial_config['file.forecast'],
+                            '--observation-nc', initial_config['file.observation'],
+                            '-o', './' + os.path.basename(initial_config['output.AnEn']), '--stations-ID']
 
-            t1.arguments.extend([
-                                '--number-of-cores', int(initial_config['cores']),
-                                '--test-ID-start', int(initial_config['test.ID.start']),
-                                '--test-ID-end', int(initial_config['test.ID.end']),
-                                '--train-ID-start', int(initial_config['train.ID.start']),
-                                '--train-ID-end', int(initial_config['train.ID.end']),
-                                '--rolling', int(initial_config['rolling']),
-                                '--members-size',int(initial_config['members.size'])])
+        t1.arguments.extend(initial_config['stations.ID'][ind*10:(ind+1)*10])
 
-            #print t1.arguments
+        t1.arguments.extend([
+                            '--number-of-cores', int(initial_config['cores']),
+                            '--test-ID-start', int(initial_config['test.ID.start']),
+                            '--test-ID-end', int(initial_config['test.ID.end']),
+                            '--train-ID-start', int(initial_config['train.ID.start']),
+                            '--train-ID-end', int(initial_config['train.ID.end']),
+                            '--rolling', int(initial_config['rolling']),
+                            '--members-size',int(initial_config['members.size'])])
 
-            # Add this task to our stage
-            s1.add_tasks(t1)
+        t1.copy_output_data = ['{0} > /home/vivek91/{1}-{0}'.format(os.path.basename(initial_config['output.AnEn']), ind)]
 
-    except Exception as ex:
-        print ex
+        if ind==1:
+            stations_subset = initial_config['stations.ID'][ind*10:(ind+1)*10]
 
+        #print t1.arguments
+
+        # Add this task to our stage
+        s1.add_tasks(t1)
+
+    
     # Add the stage to our pipeline
     p.add_stages(s1)
     # --------------------------------------------------------------------------
@@ -164,8 +168,8 @@ if __name__ == '__main__':
     t2.cores         = 1
     t2.arguments     = [ 'evaluation.py', 
                         '--file_observation', initial_config['file.observation'],
-                        '--file_AnEn', initial_config['output.AnEn'],
-                        '--stations_ID', initial_config['stations.ID'],
+                        '--file_AnEn', '1-' + os.path.basename(initial_config['output.AnEn']),
+                        '--stations_ID', stations_subset,
                         '--test_ID_start', initial_config['test.ID.start'],
                         '--test_ID_end', initial_config['test.ID.end'],
                         '--nflts', '8',
@@ -173,7 +177,8 @@ if __name__ == '__main__':
                         '--ncols', '100'
                     ]
     t2.upload_input_data = ['./evaluation.py', './evaluation.R']
-    t2.link_input_data = ['%s'%(initial_config['output.AnEn'])]
+    t2.link_input_data = ['/home/vivek91/1-%s'%(os.path.basename(initial_config['output.AnEn']))]
+
 
     s2.add_tasks(t2)
 
@@ -186,7 +191,7 @@ if __name__ == '__main__':
 
             'resource': 'xsede.supermic',
             'walltime': 60,
-            'cores': 20,
+            'cores': 180,
             'project': 'TG-MCB090174',
             #'queue': 'development',
             'schema': 'gsissh'

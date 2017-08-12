@@ -5,7 +5,7 @@
 #
 initial_config <- function (verbose = F) {
   current_stage <- 1
-  init.num.pixels <- 10
+  init.num.pixels <- 100
   nrows <- 100
   ncols <- 100
   
@@ -13,7 +13,7 @@ initial_config <- function (verbose = F) {
   file.observation <- '/home/whu/data/Temperature_NAM/Analysis_NAM_R.nc'
   
   test.ID.start <- 700
-  test.ID.end <- 702
+  test.ID.end <- 701
   train.ID.start <- 0
   train.ID.end <- 699
   members.size <- 20

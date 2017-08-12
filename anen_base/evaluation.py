@@ -29,12 +29,12 @@ if __name__ == '__main__':
     with open('evaluation.R', 'r') as f:
         R_code = f.read()
     evaluation = STAP(R_code, 'evaluation')
-    stations.ID = evaluation.evaluate(    args.file_observation,
+    stations_ID = evaluation.evaluate(    args.file_observation,
                                             args.file_AnEn,
                                             robjects.IntVector(proc_station_id),
                                             float(args.test_ID_start), float(args.test_ID_end),
                                             int(args.nflts),
                                             int(args.nrows), int(args.ncols))
 
-    if len(stations.ID) is not 0:
-        print stations.ID
+    if len(stations_ID) is not 0:
+        print stations_ID
