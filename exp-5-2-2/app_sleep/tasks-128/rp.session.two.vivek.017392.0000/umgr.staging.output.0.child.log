@@ -1,0 +1,700 @@
+2017-08-14 17:05:28,574: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-08-14 17:05:28,574: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    :                      pid: 15641
+2017-08-14 17:05:28,574: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    :                      tid: MainThread
+2017-08-14 17:05:28,575: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : radical.pilot        version: 0.46-v0.46.RC2@devel
+2017-08-14 17:05:28,584: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : initialize umgr.staging.output.0.child
+2017-08-14 17:05:28,586: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://138.201.86.166:44937',
+                                  'addr_out': 'tcp://138.201.86.166:37155',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://138.201.86.166:38321',
+                              'addr_out': 'tcp://138.201.86.166:45506',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://138.201.86.166:41020',
+                                'addr_out': 'tcp://138.201.86.166:33783',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://138.201.86.166:41258',
+                                          'addr_out': 'tcp://138.201.86.166:33049',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://138.201.86.166:35098',
+                                         'addr_out': 'tcp://138.201.86.166:33750',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://138.201.86.166:42895',
+                                            'addr_out': 'tcp://138.201.86.166:40437',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://138.201.86.166:46800',
+                                             'addr_out': 'tcp://138.201.86.166:40414',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://138.201.86.166:35551',
+                                          'addr_out': 'tcp://138.201.86.166:40940',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingOutputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2017-08-14 17:05:28,586: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : start components: {}
+2017-08-14 17:05:28,586: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-08-14 17:05:28,586: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register publisher log_pubsub
+2017-08-14 17:05:28,586: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:38321 for pubsub log_pubsub
+2017-08-14 17:05:28,588: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2017-08-14 17:05:28,588: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-08-14 17:05:28,588: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register publisher state_pubsub
+2017-08-14 17:05:28,588: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:41020 for pubsub state_pubsub
+2017-08-14 17:05:28,589: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2017-08-14 17:05:28,589: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-08-14 17:05:28,589: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register publisher control_pubsub
+2017-08-14 17:05:28,589: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:44937 for pubsub control_pubsub
+2017-08-14 17:05:28,590: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2017-08-14 17:05:28,590: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-08-14 17:05:28,590: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register subscriber umgr.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-08-14 17:05:28,590: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:37155 for pubsub control_pubsub
+2017-08-14 17:05:28,591: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : parent name: umgr.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-08-14 17:05:28,591: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : start thread
+2017-08-14 17:05:28,591: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread
+2017-08-14 17:05:28,591: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2017-08-14 17:05:28,592: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-08-14 17:05:28,592: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-08-14 17:05:28,592: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2017-08-14 17:05:28,592: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread] alive
+2017-08-14 17:05:28,592: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : get msg: alive
+2017-08-14 17:05:28,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-08-14 17:05:28,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-08-14 17:05:28,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : child thread umgr.staging.output.0.child.subscriber._cancel_monitor_cb started
+2017-08-14 17:05:28,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : umgr.staging.output.0.child registered control_pubsub subscriber umgr.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-08-14 17:05:28,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : alive check in term
+2017-08-14 17:05:28,593: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : using addr tcp://138.201.86.166:40414 for input umgr_staging_output_queue
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered input umgr.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : START: umgr.staging.output.0.child register input UMGR_STAGING_OUTPUT_PENDING: umgr.staging.output.0.child.work.UMGR_STAGING_OUTPUT_PENDING
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : registered worker work [UMGR_STAGING_OUTPUT_PENDING]
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : child (me) initializing
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : parent name: umgr.staging.output.0.child.watch
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : start thread
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : child name: umgr.staging.output.0.child.watch.thread
+2017-08-14 17:05:28,594: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : child (me) initializing
+2017-08-14 17:05:28,595: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-08-14 17:05:28,595: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-08-14 17:05:28,595: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : send alive
+2017-08-14 17:05:28,595: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : put message: [umgr.staging.output.0.child.watch.thread] alive
+2017-08-14 17:05:28,596: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : get msg: alive
+2017-08-14 17:05:28,596: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-08-14 17:05:28,596: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-08-14 17:05:28,596: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : child thread umgr.staging.output.0.child.watch started
+2017-08-14 17:05:28,596: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : child (me) is alive
+2017-08-14 17:05:28,596: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : send alive
+2017-08-14 17:05:28,596: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : send message: [umgr.staging.output.0.child] alive
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000000)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000001)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000002)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000003)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000004)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000005)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000006)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000007)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000008)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000009)
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 10 [False, True]
+2017-08-14 17:05:36,027: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000000 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000001 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000002 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000003 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000004 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000005 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000006 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000007 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000008 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000009 [10]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 10 [True, True]
+2017-08-14 17:05:36,028: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000000 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000001 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000002 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000003 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000004 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000005 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000006 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000007 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000008 [10]
+2017-08-14 17:05:36,029: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000009 [10]
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009']
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000000 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000001 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000002 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000003 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000004 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000005 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000006 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000007 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000008 ===| DONE
+2017-08-14 17:05:36,032: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000009 ===| DONE
+2017-08-14 17:05:37,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000010)
+2017-08-14 17:05:37,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000011)
+2017-08-14 17:05:37,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000012)
+2017-08-14 17:05:37,642: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000013)
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000014)
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000015)
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000016)
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000017)
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000018)
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000019)
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 10 [False, True]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000010 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000011 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000012 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000013 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000014 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000015 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000016 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000017 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000018 [10]
+2017-08-14 17:05:37,643: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000019 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 10 [True, True]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000010 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000011 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000012 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000013 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000014 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000015 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000016 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000017 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000018 [10]
+2017-08-14 17:05:37,644: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000019 [10]
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000010', 'unit.000011', 'unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019']
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000010 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000011 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000012 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000013 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000014 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000015 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000016 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000017 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000018 ===| DONE
+2017-08-14 17:05:37,647: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000019 ===| DONE
+2017-08-14 17:05:39,249: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000022)
+2017-08-14 17:05:39,249: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000023)
+2017-08-14 17:05:39,249: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000033)
+2017-08-14 17:05:39,249: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000034)
+2017-08-14 17:05:39,249: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000030)
+2017-08-14 17:05:39,249: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000031)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000036)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000032)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000035)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000029)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000028)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000025)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000024)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000027)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000026)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000021)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000020)
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 17 [False, True]
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000022 [17]
+2017-08-14 17:05:39,250: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000023 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000033 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000034 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000030 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000031 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000036 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000032 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000035 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000029 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000028 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000025 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000024 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000027 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000026 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000021 [17]
+2017-08-14 17:05:39,251: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000020 [17]
+2017-08-14 17:05:39,254: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 17 [True, True]
+2017-08-14 17:05:39,254: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000022 [17]
+2017-08-14 17:05:39,254: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000023 [17]
+2017-08-14 17:05:39,254: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000033 [17]
+2017-08-14 17:05:39,254: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000034 [17]
+2017-08-14 17:05:39,254: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000030 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000031 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000036 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000032 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000035 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000029 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000028 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000025 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000024 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000027 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000026 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000021 [17]
+2017-08-14 17:05:39,255: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000020 [17]
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000022', 'unit.000023', 'unit.000033', 'unit.000034', 'unit.000030', 'unit.000031', 'unit.000036', 'unit.000032', 'unit.000035', 'unit.000029', 'unit.000028', 'unit.000025', 'unit.000024', 'unit.000027', 'unit.000026', 'unit.000021', 'unit.000020']
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000022 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000023 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000033 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000034 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000030 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000031 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000036 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000032 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000035 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000029 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000028 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000025 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000024 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000027 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000026 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000021 ===| DONE
+2017-08-14 17:05:39,258: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000020 ===| DONE
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000037)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000038)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000039)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000040)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000041)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000042)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000043)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000044)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000045)
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 9 [False, True]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000037 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000038 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000039 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000040 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000041 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000042 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000043 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000044 [9]
+2017-08-14 17:05:40,708: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000045 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 9 [True, True]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000037 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000038 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000039 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000040 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000041 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000042 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000043 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000044 [9]
+2017-08-14 17:05:40,709: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000045 [9]
+2017-08-14 17:05:40,711: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000037', 'unit.000038', 'unit.000039', 'unit.000040', 'unit.000041', 'unit.000042', 'unit.000043', 'unit.000044', 'unit.000045']
+2017-08-14 17:05:40,711: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000037 ===| DONE
+2017-08-14 17:05:40,711: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000038 ===| DONE
+2017-08-14 17:05:40,711: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000039 ===| DONE
+2017-08-14 17:05:40,711: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000040 ===| DONE
+2017-08-14 17:05:40,712: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000041 ===| DONE
+2017-08-14 17:05:40,712: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000042 ===| DONE
+2017-08-14 17:05:40,712: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000043 ===| DONE
+2017-08-14 17:05:40,712: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000044 ===| DONE
+2017-08-14 17:05:40,712: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000045 ===| DONE
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000066)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000065)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000064)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000076)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000074)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000075)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000056)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000058)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000059)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000060)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000047)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000046)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000049)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000048)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000054)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000055)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000057)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000050)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000051)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000052)
+2017-08-14 17:05:42,502: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000053)
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000061)
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000063)
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000062)
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 24 [False, True]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000066 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000065 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000064 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000076 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000074 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000075 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000056 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000058 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000059 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000060 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000047 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000046 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000049 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000048 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000054 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000055 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000057 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000050 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000051 [24]
+2017-08-14 17:05:42,503: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000052 [24]
+2017-08-14 17:05:42,504: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000053 [24]
+2017-08-14 17:05:42,504: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000061 [24]
+2017-08-14 17:05:42,504: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000063 [24]
+2017-08-14 17:05:42,504: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000062 [24]
+2017-08-14 17:05:42,504: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 24 [True, True]
+2017-08-14 17:05:42,505: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000066 [24]
+2017-08-14 17:05:42,505: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000065 [24]
+2017-08-14 17:05:42,505: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000064 [24]
+2017-08-14 17:05:42,505: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000076 [24]
+2017-08-14 17:05:42,505: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000074 [24]
+2017-08-14 17:05:42,505: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000075 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000056 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000058 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000059 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000060 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000047 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000046 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000049 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000048 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000054 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000055 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000057 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000050 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000051 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000052 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000053 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000061 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000063 [24]
+2017-08-14 17:05:42,506: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000062 [24]
+2017-08-14 17:05:42,511: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000066', 'unit.000065', 'unit.000064', 'unit.000076', 'unit.000074', 'unit.000075', 'unit.000056', 'unit.000058', 'unit.000059', 'unit.000060', 'unit.000047', 'unit.000046', 'unit.000049', 'unit.000048', 'unit.000054', 'unit.000055', 'unit.000057', 'unit.000050', 'unit.000051', 'unit.000052', 'unit.000053', 'unit.000061', 'unit.000063', 'unit.000062']
+2017-08-14 17:05:42,511: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000066 ===| DONE
+2017-08-14 17:05:42,514: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000065 ===| DONE
+2017-08-14 17:05:42,514: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000064 ===| DONE
+2017-08-14 17:05:42,514: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000076 ===| DONE
+2017-08-14 17:05:42,514: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000074 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000075 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000056 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000058 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000059 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000060 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000047 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000046 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000049 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000048 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000054 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000055 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000057 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000050 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000051 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000052 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000053 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000061 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000063 ===| DONE
+2017-08-14 17:05:42,515: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000062 ===| DONE
+2017-08-14 17:05:44,264: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000067)
+2017-08-14 17:05:44,264: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000068)
+2017-08-14 17:05:44,264: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000069)
+2017-08-14 17:05:44,264: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000070)
+2017-08-14 17:05:44,264: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000071)
+2017-08-14 17:05:44,264: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000072)
+2017-08-14 17:05:44,264: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000073)
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 7 [False, True]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000067 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000068 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000069 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000070 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000071 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000072 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000073 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 7 [True, True]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000067 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000068 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000069 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000070 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000071 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000072 [7]
+2017-08-14 17:05:44,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000073 [7]
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000067', 'unit.000068', 'unit.000069', 'unit.000070', 'unit.000071', 'unit.000072', 'unit.000073']
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000067 ===| DONE
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000068 ===| DONE
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000069 ===| DONE
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000070 ===| DONE
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000071 ===| DONE
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000072 ===| DONE
+2017-08-14 17:05:44,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000073 ===| DONE
+2017-08-14 17:05:46,014: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000081)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000082)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000079)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000080)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000084)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000085)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000083)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000086)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000087)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000088)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000077)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000078)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000089)
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 13 [False, True]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000081 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000082 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000079 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000080 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000084 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000085 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000083 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000086 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000087 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000088 [13]
+2017-08-14 17:05:46,015: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000077 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000078 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000089 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 13 [True, True]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000081 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000082 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000079 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000080 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000084 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000085 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000083 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000086 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000087 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000088 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000077 [13]
+2017-08-14 17:05:46,016: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000078 [13]
+2017-08-14 17:05:46,017: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000089 [13]
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000081', 'unit.000082', 'unit.000079', 'unit.000080', 'unit.000084', 'unit.000085', 'unit.000083', 'unit.000086', 'unit.000087', 'unit.000088', 'unit.000077', 'unit.000078', 'unit.000089']
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000081 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000082 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000079 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000080 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000084 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000085 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000083 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000086 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000087 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000088 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000077 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000078 ===| DONE
+2017-08-14 17:05:46,020: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000089 ===| DONE
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000108)
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000107)
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000103)
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000105)
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000104)
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000106)
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000090)
+2017-08-14 17:05:48,265: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000094)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000091)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000092)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000093)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000095)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000096)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000097)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000098)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000099)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000100)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000101)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000102)
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 19 [False, True]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000108 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000107 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000103 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000105 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000104 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000106 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000090 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000094 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000091 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000092 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000093 [19]
+2017-08-14 17:05:48,266: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000095 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000096 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000097 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000098 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000099 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000100 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000101 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000102 [19]
+2017-08-14 17:05:48,267: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 19 [True, True]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000108 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000107 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000103 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000105 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000104 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000106 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000090 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000094 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000091 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000092 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000093 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000095 [19]
+2017-08-14 17:05:48,268: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000096 [19]
+2017-08-14 17:05:48,269: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000097 [19]
+2017-08-14 17:05:48,269: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000098 [19]
+2017-08-14 17:05:48,269: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000099 [19]
+2017-08-14 17:05:48,269: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000100 [19]
+2017-08-14 17:05:48,269: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000101 [19]
+2017-08-14 17:05:48,269: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000102 [19]
+2017-08-14 17:05:48,272: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000108', 'unit.000107', 'unit.000103', 'unit.000105', 'unit.000104', 'unit.000106', 'unit.000090', 'unit.000094', 'unit.000091', 'unit.000092', 'unit.000093', 'unit.000095', 'unit.000096', 'unit.000097', 'unit.000098', 'unit.000099', 'unit.000100', 'unit.000101', 'unit.000102']
+2017-08-14 17:05:48,272: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000108 ===| DONE
+2017-08-14 17:05:48,272: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000107 ===| DONE
+2017-08-14 17:05:48,272: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000103 ===| DONE
+2017-08-14 17:05:48,272: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000105 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000104 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000106 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000090 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000094 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000091 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000092 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000093 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000095 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000096 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000097 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000098 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000099 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000100 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000101 ===| DONE
+2017-08-14 17:05:48,273: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000102 ===| DONE
+2017-08-14 17:05:50,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000113)
+2017-08-14 17:05:50,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000115)
+2017-08-14 17:05:50,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000111)
+2017-08-14 17:05:50,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000110)
+2017-08-14 17:05:50,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000114)
+2017-08-14 17:05:50,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000112)
+2017-08-14 17:05:50,328: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000116)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000117)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000109)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000126)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000127)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000121)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000123)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000122)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000125)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000124)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000118)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000119)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : got unit (unit.000120)
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 19 [False, True]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000113 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000115 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000111 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000110 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000114 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000112 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000116 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000117 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000109 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000126 [19]
+2017-08-14 17:05:50,329: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000127 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000121 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000123 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000122 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000125 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000124 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000118 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000119 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000120 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk size: 19 [True, True]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000113 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000115 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000111 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000110 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000114 [19]
+2017-08-14 17:05:50,330: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000112 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000116 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000117 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000109 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000126 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000127 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000121 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000123 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000122 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000125 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000124 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000118 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000119 [19]
+2017-08-14 17:05:50,331: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : advance bulk: unit.000120 [19]
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : bucket: DONE : ['unit.000113', 'unit.000115', 'unit.000111', 'unit.000110', 'unit.000114', 'unit.000112', 'unit.000116', 'unit.000117', 'unit.000109', 'unit.000126', 'unit.000127', 'unit.000121', 'unit.000123', 'unit.000122', 'unit.000125', 'unit.000124', 'unit.000118', 'unit.000119', 'unit.000120']
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000113 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000115 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000111 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000110 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000114 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000112 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000116 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000117 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000109 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000126 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000127 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000121 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000123 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000122 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000125 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000124 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000118 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000119 ===| DONE
+2017-08-14 17:05:50,337: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : push unit.000120 ===| DONE
+2017-08-14 17:05:51,658: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: WARNING : endpoint disappeard
+2017-08-14 17:05:51,658: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : watcher closes
+2017-08-14 17:05:51,658: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : put message: [umgr.staging.output.0.child.watch.thread] work finished
+2017-08-14 17:05:51,658: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2017-08-14 17:05:51,658: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2017-08-14 17:05:51,658: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.watch: INFO    : put message: [umgr.staging.output.0.child.watch.thread] terminating
+2017-08-14 17:05:52,339: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_common()
+2017-08-14 17:05:52,340: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : alive check: proc invalid - stop [False - True]
+2017-08-14 17:05:52,374: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : stop umgr.staging.output.0.child (15641 : 15641 : MainThread) [radical.utils.process.Default.is_valid]
+2017-08-14 17:05:52,374: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child
+2017-08-14 17:05:52,374: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_common()
+2017-08-14 17:05:52,374: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : TERM : umgr.staging.output.0.child unregister publisher log_pubsub
+2017-08-14 17:05:52,374: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : unregistered publisher log_pubsub
+2017-08-14 17:05:52,374: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : TERM : umgr.staging.output.0.child unregister publisher state_pubsub
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : TERM : umgr.staging.output.0.child unregister publisher control_pubsub
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : umgr.staging.output.0.child close prof
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-08-14 17:05:52,375: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: ERROR   : abort: ZMQError('Socket operation on non-socket')
+Traceback (most recent call last):
+  File "/home/vivek/ves/ve-exp-5-2-2/local/lib/python2.7/site-packages/radical/utils/threads.py", line 375, in _run
+    if not self.work_cb():
+  File "/home/vivek/ves/ve-exp-5-2-2/local/lib/python2.7/site-packages/radical/pilot/utils/component.py", line 1088, in work_cb
+    topic, msg = self._q.get_nowait(500)  # timout in ms
+  File "/home/vivek/ves/ve-exp-5-2-2/local/lib/python2.7/site-packages/radical/pilot/utils/pubsub.py", line 352, in get_nowait
+    if _uninterruptible(self._q.poll, flags=zmq.POLLIN, timeout=timeout):
+  File "/home/vivek/ves/ve-exp-5-2-2/local/lib/python2.7/site-packages/radical/pilot/utils/pubsub.py", line 50, in _uninterruptible
+    return f(*args, **kwargs)
+  File "/home/vivek/ves/ve-exp-5-2-2/local/lib/python2.7/site-packages/zmq/sugar/socket.py", line 558, in poll
+    evts = dict(p.poll(timeout))
+  File "/home/vivek/ves/ve-exp-5-2-2/local/lib/python2.7/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll (zmq/backend/cython/_poll.c:2186)
+  File "zmq/backend/cython/_poll.pyx", line 116, in zmq.backend.cython._poll.zmq_poll (zmq/backend/cython/_poll.c:2036)
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc (zmq/backend/cython/_poll.c:2811)
+    raise ZMQError(errno)
+ZMQError: Socket operation on non-socket
+2017-08-14 17:05:52,376: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread] ZMQError('Socket operation on non-socket')
+2017-08-14 17:05:52,376: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-08-14 17:05:52,376: umgr.staging.output.0.child: umgr.staging.output.0           : umgr.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [umgr.staging.output.0.child.subscriber._cancel_monitor_cb.thread] terminating
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : super umgr.staging.output.0.child is invalid
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : component umgr.staging.output.0.child is invalid
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : stop umgr.staging.output.0.child (15641 : 15641 : MainThread) [radical.pilot.utils.component.Default.is_valid]
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : publisher log_pubsub is not registered
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : publisher state_pubsub is not registered
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : publisher control_pubsub is not registered
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : DEBUG   : umgr.staging.output.0.child close prof
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : send message: [umgr.staging.output.0.child] terminating
+2017-08-14 17:05:52,377: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : WARNING : send failed ([Errno 9] Bad file descriptor) - terminate
+2017-08-14 17:05:52,378: umgr.staging.output.0.child: umgr.staging.output.0           : MainThread     : INFO    : parent stops child

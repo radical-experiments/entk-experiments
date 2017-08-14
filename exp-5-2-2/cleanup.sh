@@ -1,1 +1,1 @@
-rm app_* rp.* *.prof -rf
+rm rp.* *.prof -rf

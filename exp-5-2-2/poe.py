@@ -9,7 +9,7 @@ app_coll = {
     
     "sleep": {
                 'executable': '/bin/sleep',
-                'arguments': 10,
+                'arguments': 1,
                 'cores': 1
             }
 }
@@ -34,7 +34,7 @@ if os.environ.get('RADICAL_ENTK_VERBOSE') == None:
     os.environ['RADICAL_ENTK_VERBOSE'] = 'INFO'
 
 
-def get_pipeline():
+def get_pipeline(tasks):
 
     # Create a Pipeline object
     p = Pipeline()
@@ -42,7 +42,7 @@ def get_pipeline():
     # Create a Stage 1
     s1 = Stage()
 
-    for cnt in range(2):
+    for cnt in range(tasks):
 
         # Create a Task object according to the app_name
         t1 = Task()
@@ -56,42 +56,21 @@ def get_pipeline():
     # Add Stage to the Pipeline
     p.add_stages(s1)
 
-
-    # Create another Stage object to hold character count tasks
-    s2 = Stage()
-
-    for cnt in range(2):
-
-        # Create a Task object according to the app_name
-        t1 = Task()
-        t1.executable = [app_coll[app_name]['executable']]
-        t1.arguments = [app_coll[app_name]['arguments']]
-        t1.cores = app_coll[app_name]['cores']
-
-        # Add the Task to the Stage
-        s2.add_tasks(t1)
-
-    # Add Stage to the Pipeline
-    p.add_stages(s2)
-
     return p
-
 
 if __name__ == '__main__':
 
     if len(sys.argv) != 4:
-        print 'Missing arguments. Execution cmd: python poe.py <num_pipes> <app_name>'
+        print 'Missing arguments. Execution cmd: python poe.py <num_tasks> <app_name> <resource_name>'
         sys.exit(1)
 
-    num_pipes = int(sys.argv[1])
+    num_tasks = int(sys.argv[1])
     app_name = sys.argv[2]
     res_name = sys.argv[3]
 
     pipes_set = set()
 
-    for cnt in range(num_pipes):
-
-        pipes_set.add(get_pipeline())
+    pipes_set.add(get_pipeline(num_tasks))
 
     # Create a dictionary describe four mandatory keys:
     # resource, walltime, cores and project
@@ -100,9 +79,9 @@ if __name__ == '__main__':
 
             'resource': res_name,
             'walltime': res_coll[res_name]['walltime'],
-            'cores': num_pipes,
+            'cores': num_tasks,
             'project': res_coll[res_name]['project'],
-            'schema': res_coll[res_name]['schema']
+            'access_schema': res_coll[res_name]['schema']
     }
 
     # Create Resource Manager object with the above resource description
