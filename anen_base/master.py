@@ -178,7 +178,7 @@ if __name__ == '__main__':
                     ]
     t2.upload_input_data = ['./evaluation.py', './evaluation.R']
     t2.link_input_data = ['/home/vivek91/1-%s'%(os.path.basename(initial_config['output.AnEn']))]
-
+    
 
     s2.add_tasks(t2)
 
