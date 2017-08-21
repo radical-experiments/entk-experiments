@@ -1,0 +1,11 @@
+#!/home/vivek/Research/repos/entk-experiments/exp-5-2-2/myenv/bin/python2
+
+import sys
+import radical.utils as ru
+
+
+if len(sys.argv) > 1 and sys.argv[1] == '-v':
+    print ru.version_detail
+else:
+    print ru.version
+

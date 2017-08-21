@@ -1,0 +1,1 @@
+rm rp.* *.prof -rf
