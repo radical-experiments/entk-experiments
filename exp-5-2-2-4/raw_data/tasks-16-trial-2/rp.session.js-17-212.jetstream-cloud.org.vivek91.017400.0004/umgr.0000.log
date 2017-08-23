@@ -1,0 +1,1010 @@
+2017-08-22 10:48:29,320: umgr.0000           : task-manager                    : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-08-22 10:48:29,320: umgr.0000           : task-manager                    : MainThread     : INFO    :                      pid: 12271
+2017-08-22 10:48:29,320: umgr.0000           : task-manager                    : MainThread     : INFO    :                      tid: MainThread
+2017-08-22 10:48:29,321: umgr.0000           : task-manager                    : MainThread     : INFO    : radical.pilot        version: 0.46-v0.46.RC2@devel
+2017-08-22 10:48:30,378: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-22 10:48:30,379: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start process
+2017-08-22 10:48:30,379: umgr.0000           : task-manager                    : MainThread     : INFO    : initialize umgr.0000
+2017-08-22 10:48:30,381: umgr.0000           : task-manager                    : MainThread     : INFO    : cfg: {u'bridges': {u'umgr_reschedule_pubsub': {u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ u'components': {u'UMGRSchedulingComponent': {u'count': 1},
+                 u'UMGRStagingInputComponent': {u'count': 1},
+                 u'UMGRStagingOutputComponent': {u'count': 1}},
+ u'db_poll_sleeptime': 1.0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin'}
+2017-08-22 10:48:30,382: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start bridges   : {u'umgr_reschedule_pubsub': {u'bulk_size': 0,
+                             u'log_level': u'debug',
+                             u'stall_hwm': 1},
+ u'umgr_scheduling_queue': {u'bulk_size': 0,
+                            u'log_level': u'debug',
+                            u'stall_hwm': 1},
+ u'umgr_staging_input_queue': {u'bulk_size': 0,
+                               u'log_level': u'debug',
+                               u'stall_hwm': 1},
+ u'umgr_staging_output_queue': {u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+ u'umgr_unschedule_pubsub': {u'bulk_size': 0,
+                             u'log_level': u'debug',
+                             u'stall_hwm': 1}}
+2017-08-22 10:48:30,382: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_reschedule_pubsub
+2017-08-22 10:48:30,408: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_reschedule_pubsub (umgr.reschedule.pubsub.bridge.0000)
+2017-08-22 10:48:30,408: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_staging_input_queue
+2017-08-22 10:48:30,431: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_staging_input_queue (umgr.staging.input.queue.bridge.0000)
+2017-08-22 10:48:30,432: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_staging_output_queue
+2017-08-22 10:48:30,457: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_staging_output_queue (umgr.staging.output.queue.bridge.0000)
+2017-08-22 10:48:30,457: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_unschedule_pubsub
+2017-08-22 10:48:30,485: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_unschedule_pubsub (umgr.unschedule.pubsub.bridge.0000)
+2017-08-22 10:48:30,485: umgr.0000           : task-manager                    : MainThread     : INFO    : create bridge umgr_scheduling_queue
+2017-08-22 10:48:30,509: umgr.0000           : task-manager                    : MainThread     : INFO    : created bridge umgr_scheduling_queue (umgr.scheduling.queue.bridge.0000)
+2017-08-22 10:48:30,510: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start components: {u'UMGRSchedulingComponent': {u'count': 1},
+ u'UMGRStagingInputComponent': {u'count': 1},
+ u'UMGRStagingOutputComponent': {u'count': 1}}
+2017-08-22 10:48:30,510: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start 1 component(s) UMGRStagingInputComponent
+2017-08-22 10:48:32,640: umgr.0000           : task-manager                    : MainThread     : INFO    : umgr.0000                      starts umgr.staging.input.0
+2017-08-22 10:48:32,641: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start 1 component(s) UMGRStagingOutputComponent
+2017-08-22 10:48:34,882: umgr.0000           : task-manager                    : MainThread     : INFO    : umgr.0000                      starts umgr.staging.output.0
+2017-08-22 10:48:34,882: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start 1 component(s) UMGRSchedulingComponent
+2017-08-22 10:48:37,000: umgr.0000           : task-manager                    : MainThread     : INFO    : umgr.0000                      starts umgr.scheduling.0
+2017-08-22 10:48:37,000: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-22 10:48:37,000: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register publisher log_pubsub
+2017-08-22 10:48:37,000: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:46198 for pubsub log_pubsub
+2017-08-22 10:48:37,003: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0006
+2017-08-22 10:48:37,003: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-22 10:48:37,003: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register publisher state_pubsub
+2017-08-22 10:48:37,003: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:38971 for pubsub state_pubsub
+2017-08-22 10:48:37,005: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0006
+2017-08-22 10:48:37,006: umgr.0000           : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-22 10:48:37,006: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register publisher control_pubsub
+2017-08-22 10:48:37,006: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:36530 for pubsub control_pubsub
+2017-08-22 10:48:37,009: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0006
+2017-08-22 10:48:37,009: umgr.0000           : task-manager                    : MainThread     : DEBUG   : process class started (no child)
+2017-08-22 10:48:37,009: umgr.0000           : task-manager                    : MainThread     : INFO    : started umgr umgr.0000
+2017-08-22 10:48:37,009: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register output UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:37,009: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:43193 for output umgr_scheduling_queue
+2017-08-22 10:48:37,012: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered output    : UMGR_SCHEDULING_PENDING : umgr_scheduling_queue : umgr.scheduling.queue.input.0000
+2017-08-22 10:48:37,012: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register output UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:37,012: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:41982 for output umgr_staging_output_queue
+2017-08-22 10:48:37,015: umgr.0000           : task-manager                    : MainThread     : DEBUG   : registered output    : UMGR_STAGING_OUTPUT_PENDING : umgr_staging_output_queue : umgr.staging.output.queue.input.0000
+2017-08-22 10:48:37,015: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register idler umgr.0000.idler._state_pull_cb
+2017-08-22 10:48:37,016: umgr.0000           : task-manager                    : MainThread     : DEBUG   : parent name: umgr.0000.idler._state_pull_cb
+2017-08-22 10:48:37,016: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start thread
+2017-08-22 10:48:37,016: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : child name: umgr.0000.idler._state_pull_cb.thread
+2017-08-22 10:48:37,016: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : child (me) initializing
+2017-08-22 10:48:37,016: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-08-22 10:48:37,017: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-08-22 10:48:37,017: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : send alive
+2017-08-22 10:48:37,017: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : put message: [umgr.0000.idler._state_pull_cb.thread] alive
+2017-08-22 10:48:37,017: umgr.0000           : task-manager                    : MainThread     : INFO    : get msg: alive
+2017-08-22 10:48:37,018: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-08-22 10:48:37,018: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-08-22 10:48:37,018: umgr.0000           : task-manager                    : MainThread     : DEBUG   : child thread umgr.0000.idler._state_pull_cb started
+2017-08-22 10:48:37,018: umgr.0000           : task-manager                    : MainThread     : DEBUG   : umgr.0000 registered idler umgr.0000.idler._state_pull_cb
+2017-08-22 10:48:37,019: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register idler umgr.0000.idler._unit_pull_cb
+2017-08-22 10:48:37,378: umgr.0000           : task-manager                    : MainThread     : DEBUG   : parent name: umgr.0000.idler._unit_pull_cb
+2017-08-22 10:48:37,379: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start thread
+2017-08-22 10:48:37,379: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : child name: umgr.0000.idler._unit_pull_cb.thread
+2017-08-22 10:48:37,379: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : child (me) initializing
+2017-08-22 10:48:37,379: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-08-22 10:48:37,380: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-08-22 10:48:37,380: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : send alive
+2017-08-22 10:48:37,380: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : put message: [umgr.0000.idler._unit_pull_cb.thread] alive
+2017-08-22 10:48:37,380: umgr.0000           : task-manager                    : MainThread     : INFO    : get msg: alive
+2017-08-22 10:48:37,381: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-08-22 10:48:37,381: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-08-22 10:48:37,381: umgr.0000           : task-manager                    : MainThread     : DEBUG   : child thread umgr.0000.idler._unit_pull_cb started
+2017-08-22 10:48:37,381: umgr.0000           : task-manager                    : MainThread     : DEBUG   : umgr.0000 registered idler umgr.0000.idler._unit_pull_cb
+2017-08-22 10:48:37,382: umgr.0000           : task-manager                    : MainThread     : DEBUG   : START: umgr.0000 register subscriber umgr.0000.subscriber._state_sub_cb
+2017-08-22 10:48:37,382: umgr.0000           : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:38495 for pubsub state_pubsub
+2017-08-22 10:48:37,385: umgr.0000           : task-manager                    : MainThread     : DEBUG   : parent name: umgr.0000.subscriber._state_sub_cb
+2017-08-22 10:48:37,386: umgr.0000           : task-manager                    : MainThread     : DEBUG   : start thread
+2017-08-22 10:48:37,386: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : child name: umgr.0000.subscriber._state_sub_cb.thread
+2017-08-22 10:48:37,386: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : child (me) initializing
+2017-08-22 10:48:37,386: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-08-22 10:48:37,386: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-08-22 10:48:37,387: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : send alive
+2017-08-22 10:48:37,387: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : put message: [umgr.0000.subscriber._state_sub_cb.thread] alive
+2017-08-22 10:48:37,387: umgr.0000           : task-manager                    : MainThread     : INFO    : get msg: alive
+2017-08-22 10:48:37,387: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-08-22 10:48:37,388: umgr.0000           : task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-08-22 10:48:37,388: umgr.0000           : task-manager                    : MainThread     : DEBUG   : child thread umgr.0000.subscriber._state_sub_cb started
+2017-08-22 10:48:37,430: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    :  === units pulled:    0
+2017-08-22 10:48:37,431: umgr.0000           : task-manager                    : MainThread     : DEBUG   : umgr.0000 registered state_pubsub subscriber umgr.0000.subscriber._state_sub_cb
+2017-08-22 10:48:37,559: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,559: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:37,608: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:37,608: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:37,609: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000000']
+2017-08-22 10:48:37,609: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:37,609: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000000 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:37,611: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:37,620: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,621: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:37,653: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,653: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:37,654: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_SCHEDULING.
+2017-08-22 10:48:37,698: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,698: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:37,698: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:37,731: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,731: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:37,732: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:37,767: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,767: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:37,768: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:37,780: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:37,781: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:37,781: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000001']
+2017-08-22 10:48:37,781: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:37,781: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000001 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:37,791: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,791: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:37,809: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,810: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:37,810: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:37,843: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,843: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:37,843: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: UMGR_SCHEDULING.
+2017-08-22 10:48:37,858: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:37,859: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:37,859: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000002']
+2017-08-22 10:48:37,859: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:37,859: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000002 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:37,868: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,868: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:37,878: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,878: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:37,878: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:37,920: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,920: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:37,921: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:37,927: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:37,927: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:37,927: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000003']
+2017-08-22 10:48:37,927: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:37,927: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000003 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:37,936: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,936: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:37,945: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,945: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:37,946: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:37,986: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:37,987: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:37,987: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:37,995: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:37,995: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:37,995: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000004']
+2017-08-22 10:48:37,995: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:37,995: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000004 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,006: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,007: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:38,023: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,023: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:38,024: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: UMGR_SCHEDULING.
+2017-08-22 10:48:38,067: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,067: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:38,068: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,073: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,073: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:38,073: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000005']
+2017-08-22 10:48:38,074: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,074: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000005 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,086: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,086: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:38,102: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,102: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:38,102: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:38,143: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,143: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:38,144: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,151: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,152: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:38,152: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000006']
+2017-08-22 10:48:38,152: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,152: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000006 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,162: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,162: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:38,186: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,186: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:38,187: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:38,213: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,214: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:38,214: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: UMGR_SCHEDULING.
+2017-08-22 10:48:38,236: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,236: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:38,236: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000007']
+2017-08-22 10:48:38,236: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,236: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000007 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,246: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,246: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:38,256: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,256: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:38,257: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,291: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,291: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:38,291: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:38,306: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,306: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:38,307: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000008']
+2017-08-22 10:48:38,307: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,307: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000008 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,316: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,316: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:38,333: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,334: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:38,334: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,376: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,376: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:38,377: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:38,383: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,383: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:38,384: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000009']
+2017-08-22 10:48:38,384: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,384: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000009 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,394: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,394: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:38,417: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,418: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:38,468: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: UMGR_SCHEDULING.
+2017-08-22 10:48:38,503: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,503: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:38,551: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    :  === units pulled:    0
+2017-08-22 10:48:38,552: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,595: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,595: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:38,595: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:38,630: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,630: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:38,631: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,673: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,673: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:38,673: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:38,716: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,716: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:38,716: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: UMGR_SCHEDULING.
+2017-08-22 10:48:38,738: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,738: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:38,739: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000010']
+2017-08-22 10:48:38,739: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,739: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000010 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,749: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,749: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:38,759: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,759: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:38,760: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,802: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,802: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:38,802: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:38,808: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,809: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:38,809: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000011']
+2017-08-22 10:48:38,809: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,809: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000011 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,817: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,817: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:38,836: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,837: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:38,837: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,865: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,866: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:38,866: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:38,886: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,886: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:38,886: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000012']
+2017-08-22 10:48:38,886: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,887: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000012 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,898: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,899: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:38,910: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,910: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:38,910: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: UMGR_SCHEDULING.
+2017-08-22 10:48:38,938: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,938: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:38,938: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:38,960: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:38,960: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:38,960: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000013']
+2017-08-22 10:48:38,960: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:38,961: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000013 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:38,971: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,971: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:38,972: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:38,976: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,976: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:38,998: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:38,998: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:38,999: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,033: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,033: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:39,034: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:39,048: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:39,048: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:39,048: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000014']
+2017-08-22 10:48:39,048: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:39,049: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000014 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:39,060: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,060: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:39,063: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,063: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:39,064: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: UMGR_SCHEDULING.
+2017-08-22 10:48:39,099: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,099: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:39,100: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,113: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk size: 1 [True, True]
+2017-08-22 10:48:39,113: umgr.0000           : task-manager                    : MainThread     : DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:39,113: umgr.0000           : task-manager                    : MainThread     : DEBUG   : bucket: UMGR_SCHEDULING_PENDING : ['unit.000015']
+2017-08-22 10:48:39,113: umgr.0000           : task-manager                    : MainThread     : DEBUG   : put bulk UMGR_SCHEDULING_PENDING: 1
+2017-08-22 10:48:39,113: umgr.0000           : task-manager                    : MainThread     : DEBUG   : push unit.000015 ---> UMGR_SCHEDULING_PENDING
+2017-08-22 10:48:39,135: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,136: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:39,137: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:39,183: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,183: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:39,183: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,230: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,230: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:39,231: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:39,266: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,267: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:39,267: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: UMGR_SCHEDULING.
+2017-08-22 10:48:39,295: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,295: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:39,296: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,339: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,340: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:39,341: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:39,377: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,377: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:39,378: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,421: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,421: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:39,422: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000009 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:39,460: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,460: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:39,461: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000009 state: UMGR_SCHEDULING.
+2017-08-22 10:48:39,497: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,497: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:39,594: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,623: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:39,623: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:39,625: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:39,660: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:39,660: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:39,662: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,706: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:39,706: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:39,708: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:39,752: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:39,752: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:39,804: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    :  === units pulled:    0
+2017-08-22 10:48:39,805: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000010 state: UMGR_SCHEDULING.
+2017-08-22 10:48:39,850: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,851: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:39,851: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000010 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,889: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,889: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:39,890: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000010 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:39,917: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,918: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:39,918: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:39,945: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,945: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:39,946: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000011 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:39,972: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:39,972: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:39,973: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000011 state: UMGR_SCHEDULING.
+2017-08-22 10:48:40,001: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,001: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:40,002: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000011 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,029: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,029: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:40,030: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000011 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:40,076: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,076: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:40,076: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,128: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,128: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:40,129: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000012 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:40,166: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,166: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:40,167: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000012 state: UMGR_SCHEDULING.
+2017-08-22 10:48:40,204: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,205: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:40,205: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000012 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,241: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,241: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:40,242: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000012 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:40,280: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,281: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:40,281: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,317: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,318: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:40,318: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000013 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:40,354: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,354: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:40,355: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000013 state: UMGR_SCHEDULING.
+2017-08-22 10:48:40,393: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,393: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:40,394: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000013 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,422: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,423: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:40,423: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000013 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:40,459: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,459: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:40,460: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,507: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,508: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:40,508: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000014 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:40,545: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,546: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:40,546: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000014 state: UMGR_SCHEDULING.
+2017-08-22 10:48:40,582: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,583: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:40,584: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000014 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,620: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,620: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:40,621: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000014 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:40,658: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,659: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:40,659: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,687: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,687: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:40,688: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000015 state: UMGR_SCHEDULING_PENDING.
+2017-08-22 10:48:40,715: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,716: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:40,716: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000015 state: UMGR_SCHEDULING.
+2017-08-22 10:48:40,745: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,746: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:40,746: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000015 state: UMGR_STAGING_INPUT_PENDING.
+2017-08-22 10:48:40,786: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:40,786: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:40,884: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:40,929: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:40,929: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:40,931: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:40,958: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:40,958: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:40,959: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_SCHEDULING.
+2017-08-22 10:48:40,996: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:40,996: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:40,997: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:41,043: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,043: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:41,045: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_EXECUTING.
+2017-08-22 10:48:41,073: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,074: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:41,075: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:41,118: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,119: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:41,120: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:41,165: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,165: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:41,167: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_SCHEDULING.
+2017-08-22 10:48:41,202: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,202: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:41,204: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:41,248: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,248: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:41,250: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_EXECUTING.
+2017-08-22 10:48:41,285: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,285: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:41,287: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: UMGR_STAGING_INPUT.
+2017-08-22 10:48:41,315: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,316: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:41,318: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_STAGING_INPUT_PENDING.
+2017-08-22 10:48:41,355: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,355: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:41,357: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:41,386: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,386: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:41,388: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:41,432: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,432: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:41,433: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:41,470: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,470: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:41,472: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:41,499: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,500: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:41,502: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_SCHEDULING.
+2017-08-22 10:48:41,537: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,538: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:41,539: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:41,587: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,588: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:41,589: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_EXECUTING.
+2017-08-22 10:48:41,626: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,626: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:41,627: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:41,673: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,673: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:41,675: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:41,713: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,713: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:41,715: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_SCHEDULING.
+2017-08-22 10:48:41,751: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,752: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:41,753: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:41,783: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,783: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:41,785: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_EXECUTING.
+2017-08-22 10:48:41,822: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,822: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:41,823: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:41,852: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,853: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:41,854: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:41,883: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,883: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:41,885: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_SCHEDULING.
+2017-08-22 10:48:41,921: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,921: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:41,923: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:41,970: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:41,971: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:41,971: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_EXECUTING.
+2017-08-22 10:48:42,000: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,001: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:42,002: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,040: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,041: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:42,042: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:42,079: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,080: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:42,081: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_SCHEDULING.
+2017-08-22 10:48:42,118: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,119: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:42,119: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:42,154: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,154: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:42,155: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_EXECUTING.
+2017-08-22 10:48:42,184: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,184: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:42,185: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,221: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,221: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:42,222: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:42,259: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,259: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:42,260: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_SCHEDULING.
+2017-08-22 10:48:42,287: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,288: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:42,289: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:42,326: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,326: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:42,327: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_EXECUTING.
+2017-08-22 10:48:42,355: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,355: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:42,356: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,399: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,399: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:42,400: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:42,438: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,438: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:42,439: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_SCHEDULING.
+2017-08-22 10:48:42,483: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,484: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:42,485: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:42,523: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,524: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:42,525: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_EXECUTING.
+2017-08-22 10:48:42,553: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,553: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:42,554: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,582: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,582: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:42,583: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:42,610: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,610: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:42,611: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_SCHEDULING.
+2017-08-22 10:48:42,639: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,640: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:42,641: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:42,677: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,677: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:42,678: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_EXECUTING.
+2017-08-22 10:48:42,706: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,707: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:42,708: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,743: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,743: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:42,744: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:42,771: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,771: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:42,772: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_SCHEDULING.
+2017-08-22 10:48:42,799: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,799: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:42,800: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:42,827: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,827: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:42,828: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_EXECUTING.
+2017-08-22 10:48:42,854: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,854: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:42,855: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,891: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,891: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:42,892: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,927: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,928: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:42,929: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,957: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,958: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:42,959: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_STAGING_INPUT.
+2017-08-22 10:48:42,996: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:42,996: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:43,191: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:   10 [u'unit.000002', u'unit.000008', u'unit.000001', u'unit.000009', u'unit.000003', u'unit.000000', u'unit.000007', u'unit.000006', u'unit.000005', u'unit.000004']
+2017-08-22 10:48:43,191: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   :  === unit  pulled unit.000001: AGENT_EXECUTING / UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,191: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   :  === unit  pulled unit.000000: AGENT_EXECUTING / UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,191: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   :  === unit  pulled unit.000007: AGENT_EXECUTING / UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,192: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   :  === unit  pulled unit.000006: AGENT_EXECUTING / UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,192: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   :  === unit  pulled unit.000005: AGENT_EXECUTING / UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,192: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   :  === unit  pulled unit.000004: AGENT_EXECUTING / UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,193: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk size: 10 [True, True]
+2017-08-22 10:48:43,193: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000002 [10]
+2017-08-22 10:48:43,193: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000008 [10]
+2017-08-22 10:48:43,194: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000001 [10]
+2017-08-22 10:48:43,194: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000009 [10]
+2017-08-22 10:48:43,194: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000003 [10]
+2017-08-22 10:48:43,194: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000000 [10]
+2017-08-22 10:48:43,194: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000007 [10]
+2017-08-22 10:48:43,194: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000006 [10]
+2017-08-22 10:48:43,195: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000005 [10]
+2017-08-22 10:48:43,195: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000004 [10]
+2017-08-22 10:48:43,196: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : bucket: UMGR_STAGING_OUTPUT_PENDING : [u'unit.000002', u'unit.000008', u'unit.000001', u'unit.000009', u'unit.000003', u'unit.000000', u'unit.000007', u'unit.000006', u'unit.000005', u'unit.000004']
+2017-08-22 10:48:43,196: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : put bulk UMGR_STAGING_OUTPUT_PENDING: 10
+2017-08-22 10:48:43,196: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000002 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000008 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000001 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000009 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000003 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000000 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000007 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000006 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000005 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,197: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000004 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:43,204: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,241: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,241: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:43,241: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,274: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,274: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:43,275: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,300: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,300: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:43,301: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,333: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,333: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:43,333: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,360: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,360: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:43,360: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,385: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,385: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:43,385: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,410: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,410: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:43,410: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,437: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,437: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:43,437: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,461: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,461: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:43,461: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,488: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,489: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:43,489: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000009 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,521: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,522: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:43,522: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000009 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,556: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,556: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:43,556: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,592: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,592: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:43,592: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,624: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,625: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:43,625: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,657: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,657: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:43,657: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,681: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,682: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:43,682: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,707: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,707: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:43,707: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,731: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,731: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:43,731: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,757: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,757: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:43,757: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,781: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,782: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:43,782: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,817: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,817: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:43,817: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,858: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,858: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:43,858: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,884: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,884: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:43,884: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,915: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,915: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:43,916: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:43,947: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,948: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:43,948: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:43,983: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:43,983: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:43,983: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,007: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:44,008: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:44,008: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,033: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:44,033: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:44,034: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:44,060: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:44,061: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:44,061: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:44,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:44,183: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:44,225: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,225: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:44,225: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_SCHEDULING.
+2017-08-22 10:48:44,248: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,248: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:44,248: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:44,274: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,274: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:44,274: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_EXECUTING.
+2017-08-22 10:48:44,334: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,334: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:44,335: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,370: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,370: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:44,372: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:44,402: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,402: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:44,403: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000015 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,433: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,433: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:44,434: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:44,461: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,462: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:44,463: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_SCHEDULING.
+2017-08-22 10:48:44,493: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,493: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:44,494: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:44,521: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,522: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:44,523: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_EXECUTING.
+2017-08-22 10:48:44,555: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,555: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:44,555: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,587: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,587: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:44,587: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:44,610: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,610: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:44,610: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000010 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,642: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,642: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:44,642: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:44,666: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,666: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:44,666: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_SCHEDULING.
+2017-08-22 10:48:44,690: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,690: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:44,690: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:44,722: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,722: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:44,722: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_EXECUTING.
+2017-08-22 10:48:44,744: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,745: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:44,745: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,767: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,767: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:44,767: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:44,790: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,790: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:44,790: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000011 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,814: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,814: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:44,814: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:44,838: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,838: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:44,838: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_SCHEDULING.
+2017-08-22 10:48:44,860: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,861: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:44,861: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:44,883: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,883: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:44,883: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_EXECUTING.
+2017-08-22 10:48:44,905: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,905: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:44,906: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,928: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,928: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:44,928: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:44,960: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,960: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:44,961: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000012 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:44,984: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:44,984: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:44,984: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:45,008: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,008: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:45,008: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_SCHEDULING.
+2017-08-22 10:48:45,032: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,032: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:45,033: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:45,064: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,064: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:45,065: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_EXECUTING.
+2017-08-22 10:48:45,089: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,089: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:45,089: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:45,115: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,115: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:45,116: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:45,139: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,139: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:45,140: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000013 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:45,170: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,170: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:45,170: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_SCHEDULING_PENDING.
+2017-08-22 10:48:45,192: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,192: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:45,192: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_SCHEDULING.
+2017-08-22 10:48:45,216: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,216: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:45,216: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_EXECUTING_PENDING.
+2017-08-22 10:48:45,241: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,241: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:45,242: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_EXECUTING.
+2017-08-22 10:48:45,272: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,272: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:45,272: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:45,295: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,295: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:45,295: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: AGENT_STAGING_OUTPUT.
+2017-08-22 10:48:45,319: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,319: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:45,319: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: INFO    : [Callback]: unit unit.000014 state: UMGR_STAGING_OUTPUT_PENDING.
+2017-08-22 10:48:45,341: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk size: 1 [False, True]
+2017-08-22 10:48:45,342: umgr.0000           : task-manager                    : umgr.0000.idler._state_pull_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:45,342: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,374: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,374: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:45,374: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,409: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,409: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:45,409: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,433: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,433: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:45,433: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000009 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,457: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,458: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:45,458: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,482: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,482: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:45,482: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,506: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,506: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:45,506: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,541: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,541: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:45,541: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,566: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,567: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:45,567: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,602: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,602: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:45,603: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:45,637: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,637: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:45,784: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    : units pulled:    6 [u'unit.000014', u'unit.000015', u'unit.000010', u'unit.000011', u'unit.000012', u'unit.000013']
+2017-08-22 10:48:45,785: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   :  === unit  pulled unit.000013: AGENT_EXECUTING_PENDING / UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:45,786: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk size: 6 [True, True]
+2017-08-22 10:48:45,786: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000014 [6]
+2017-08-22 10:48:45,787: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000015 [6]
+2017-08-22 10:48:45,787: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000010 [6]
+2017-08-22 10:48:45,787: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000011 [6]
+2017-08-22 10:48:45,788: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000012 [6]
+2017-08-22 10:48:45,788: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : advance bulk: unit.000013 [6]
+2017-08-22 10:48:45,789: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : bucket: UMGR_STAGING_OUTPUT_PENDING : [u'unit.000014', u'unit.000015', u'unit.000010', u'unit.000011', u'unit.000012', u'unit.000013']
+2017-08-22 10:48:45,790: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : put bulk UMGR_STAGING_OUTPUT_PENDING: 6
+2017-08-22 10:48:45,791: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000014 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:45,792: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000015 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:45,793: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000010 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:45,793: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000011 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:45,793: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000012 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:45,793: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: DEBUG   : push unit.000013 ---> UMGR_STAGING_OUTPUT_PENDING
+2017-08-22 10:48:45,794: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000002 state: DONE.
+2017-08-22 10:48:45,822: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,822: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000002 [1]
+2017-08-22 10:48:45,822: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000008 state: DONE.
+2017-08-22 10:48:45,858: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,858: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000008 [1]
+2017-08-22 10:48:45,858: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000001 state: DONE.
+2017-08-22 10:48:45,895: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,895: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000001 [1]
+2017-08-22 10:48:45,896: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000009 state: DONE.
+2017-08-22 10:48:45,923: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,924: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000009 [1]
+2017-08-22 10:48:45,924: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000003 state: DONE.
+2017-08-22 10:48:45,970: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:45,971: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000003 [1]
+2017-08-22 10:48:45,971: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000000 state: DONE.
+2017-08-22 10:48:46,000: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,001: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000000 [1]
+2017-08-22 10:48:46,001: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000007 state: DONE.
+2017-08-22 10:48:46,029: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,029: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000007 [1]
+2017-08-22 10:48:46,029: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000006 state: DONE.
+2017-08-22 10:48:46,059: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,059: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000006 [1]
+2017-08-22 10:48:46,059: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000005 state: DONE.
+2017-08-22 10:48:46,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000005 [1]
+2017-08-22 10:48:46,086: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000004 state: DONE.
+2017-08-22 10:48:46,114: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,114: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000004 [1]
+2017-08-22 10:48:46,117: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000014 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:46,150: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,150: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:46,150: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000015 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:46,176: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,177: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:46,177: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000010 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:46,203: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,203: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:46,203: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000011 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:46,228: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,228: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:46,228: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000012 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:46,253: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,254: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:46,254: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000013 state: UMGR_STAGING_OUTPUT.
+2017-08-22 10:48:46,279: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,280: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:46,280: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000014 state: DONE.
+2017-08-22 10:48:46,308: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,308: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000014 [1]
+2017-08-22 10:48:46,309: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000015 state: DONE.
+2017-08-22 10:48:46,336: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,336: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000015 [1]
+2017-08-22 10:48:46,336: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000010 state: DONE.
+2017-08-22 10:48:46,365: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,365: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000010 [1]
+2017-08-22 10:48:46,365: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000011 state: DONE.
+2017-08-22 10:48:46,401: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,401: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000011 [1]
+2017-08-22 10:48:46,401: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000012 state: DONE.
+2017-08-22 10:48:46,430: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,431: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000012 [1]
+2017-08-22 10:48:46,431: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: INFO    : [Callback]: unit unit.000013 state: DONE.
+2017-08-22 10:48:46,459: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk size: 1 [False, False]
+2017-08-22 10:48:46,459: umgr.0000           : task-manager                    : umgr.0000.subscriber._state_sub_cb: DEBUG   : advance bulk: unit.000013 [1]
+2017-08-22 10:48:46,846: umgr.0000           : task-manager                    : umgr.0000.idler._unit_pull_cb: INFO    :  === units pulled:    0
