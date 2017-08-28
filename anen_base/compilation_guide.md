@@ -22,7 +22,7 @@ make -j 16
 
 # compile on Stampede
 
-This is tested on Stampede 2.
+*This is tested on Stampede 2.*
 
 ```
 # set up environment
