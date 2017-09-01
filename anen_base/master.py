@@ -36,7 +36,8 @@ def test_initial_config(d):
     possible_keys = [   'file.forecast', 'file.observation','output.AnEn',
                         'stations.ID', 'cores', 'test.ID.start', 'test.ID.end',
                         'train.ID.start', 'train.ID.end', 'rolling',
-                        'members.size'
+                        'members.size','num.flts','num.times','num.parameters',
+                        'num.stations_per_chunk','num.stations'
                     ]
 
     all_ok = True
@@ -59,7 +60,8 @@ def process_initial_config(initial_config):
     possible_keys = [   'file.forecast', 'file.observation','output.AnEn',
                         'cores', 'test.ID.start', 'test.ID.end',
                         'train.ID.start', 'train.ID.end', 'rolling',
-                        'members.size'
+                        'members.size','num.flts','num.times','num.parameters',
+                        'num.stations_per_chunk','num.stations'
                     ]
 
     for keys in possible_keys:
@@ -124,7 +126,23 @@ if __name__ == '__main__':
         t1.arguments     = [ '-N','-p',
                             '--forecast-nc', initial_config['file.forecast'],
                             '--observation-nc', initial_config['file.observation'],
-                            '-o', './' + os.path.basename(initial_config['output.AnEn']), '--stations-ID']
+                            '-o', './' + os.path.basename(initial_config['output.AnEn']), '--stations-ID',
+                            '--start-forecasts','0 %s 0 0'%initial_config['stations.ID'][ind*10],
+                            '--count-forecasts','%s %s %s %s'%( initial_config['num.parameters'],
+                                                                # TODO: Needs to be fixed for case when number of stations is not multiple of 10
+                                                                initial_config['num.stations.per.chunk'],
+                                                                initial_config['num.times'],
+                                                                initial_config['num.flts']
+                                                            ),  
+                            '--stride-forecasts','1 1 1 1',
+                            '--start-observations','0 %s 0 0'%initial_config['stations.ID'][ind*10],
+                            '--count-observations','1 %s %s %s'%(
+                                                                # TODO: Needs to be fixed for case when number of stations is not multiple of 10
+                                                                initial_config['num.stations.per.chunk'],
+                                                                initial_config['num.times'],
+                                                                initial_config['num.flts'],
+                                                            )
+                            '--stride-observations','1 1 1 1']
 
         t1.arguments.extend(initial_config['stations.ID'][ind*10:(ind+1)*10])
 
@@ -137,7 +155,11 @@ if __name__ == '__main__':
                             '--rolling', int(initial_config['rolling']),
                             '--members-size',int(initial_config['members.size'])])
 
-        t1.copy_output_data = ['{0} > /home/vivek91/{1}-{0}'.format(os.path.basename(initial_config['output.AnEn']), ind)]
+        t1.copy_output_data = ['{0} > /home/vivek91/{1}-starts-{2}-ends-{3}.nc'.format( os.path.basename(initial_config['output.AnEn'],
+                                                                                    os.path.basename(initial_config['output.AnEn']).split('.')[0],
+                                                                                    initial_config['stations.ID'][ind*10],
+                                                                                    initial_config['stations.ID'][(ind+1)*10]), 
+                                                                                    ind)]
 
         if ind==1:
             stations_subset = initial_config['stations.ID'][ind*10:(ind+1)*10]
@@ -154,21 +176,43 @@ if __name__ == '__main__':
 
 
     # -------------------------- Stage 2 ---------------------------------------
-    
 
-    # Third stage corresponds to evaluation of interpolated data
     s2 = Stage()
 
     t2 = Task()
-    t2.executable    = ['python']
-    t2.pre_exec      =  [   'module load python/2.7.7/GCC-4.9.0',
+    t2.executable       = ['canalogs']
+    t2.pre_exec         = resource_key['xsede.supermic']
+    t2.arguments        = [ '-C',
+                            '--file-new','analogs_%s.nc'%len(initial_config['stations.ID']),
+                            '--files-from']
+
+    for ind in range(10):
+        analog_files = ['/home/vivek91/{0}-starts-{1}-ends-{2}.nc'.format(os.path.basename(initial_config['output.AnEn']).split('.')[0],
+                                                            initial_config['stations.ID'][ind*10],
+                                                            initial_config['stations.ID'][(ind+1)*10])]
+
+    t2.arguments.extend(analog_files)
+
+
+
+    # --------------------------------------------------------------------------
+
+    # -------------------------- Stage 3 ---------------------------------------
+    
+
+    # Third stage corresponds to evaluation of interpolated data
+    s3 = Stage()
+
+    t3 = Task()
+    t3.executable    = ['python']
+    t3.pre_exec      =  [   'module load python/2.7.7/GCC-4.9.0',
                             'source $HOME/ve_rpy2/bin/activate',
                             'module load r',
                             'module load netcdf']
-    t2.cores         = 1
-    t2.arguments     = [ 'evaluation.py', 
+    t3.cores         = 1
+    t3.arguments     = [ 'evaluation.py', 
                         '--file_observation', initial_config['file.observation'],
-                        '--file_AnEn', '1-' + os.path.basename(initial_config['output.AnEn']),
+                        '--file_AnEn', 'analogs_%s.nc'%len(initial_config['stations.ID']),
                         '--stations_ID', stations_subset,
                         '--test_ID_start', initial_config['test.ID.start'],
                         '--test_ID_end', initial_config['test.ID.end'],
@@ -176,13 +220,18 @@ if __name__ == '__main__':
                         '--nrows', '100',
                         '--ncols', '100'
                     ]
-    t2.upload_input_data = ['./evaluation.py', './evaluation.R']
-    t2.link_input_data = ['/home/vivek91/1-%s'%(os.path.basename(initial_config['output.AnEn']))]
+    t3.upload_input_data = ['./evaluation.py', './evaluation.R']
+    t3.link_input_data = ['$Pipeline_%s_$Stage_%s_$Task_%s/analogs_%s.nc'%(
+                                                                            p.uid,
+                                                                            s2.uid,
+                                                                            t2.uid,
+                                                                            len(initial_config['stations.ID'])
+                                                                        )]
     
 
-    s2.add_tasks(t2)
+    s3.add_tasks(t3)
 
-    p.add_stages(s2)
+    p.add_stages(s3)
     # --------------------------------------------------------------------------
 
 
