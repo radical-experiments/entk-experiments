@@ -155,16 +155,16 @@ if __name__ == '__main__':
                             '--rolling', int(initial_config['rolling']),
                             '--members-size',int(initial_config['members.size'])])
 
-        t1.copy_output_data = ['{0} > /home/vivek91/{1}-starts-{2}-ends-{3}.nc'.format( os.path.basename(initial_config['output.AnEn'],
-                                                                                    os.path.basename(initial_config['output.AnEn']).split('.')[0],
-                                                                                    initial_config['stations.ID'][ind*10],
-                                                                                    initial_config['stations.ID'][(ind+1)*10]), 
-                                                                                    ind)]
+        #t1.copy_output_data = ['{0} > /home/vivek91/{1}-starts-{2}-ends-{3}.nc'.format( os.path.basename(initial_config['output.AnEn'],
+        #                                                                            os.path.basename(initial_config['output.AnEn']).split('.')[0],
+        #                                                                            initial_config['stations.ID'][ind*10],
+        #                                                                            initial_config['stations.ID'][(ind+1)*10]), 
+        #                                                                            ind)]
 
         if ind==1:
             stations_subset = initial_config['stations.ID'][ind*10:(ind+1)*10]
 
-        #print t1.arguments
+        anen_task_uids.append(t1.uid)
 
         # Add this task to our stage
         s1.add_tasks(t1)
@@ -183,13 +183,26 @@ if __name__ == '__main__':
     t2.executable       = ['canalogs']
     t2.pre_exec         = resource_key['xsede.supermic']
     t2.arguments        = [ '-C',
-                            '--file-new','analogs_%s.nc'%len(initial_config['stations.ID']),
+                            '--file-new','%s'%len(initial_config['output.AnEn']),
                             '--files-from']
 
+    t2.link_input_data = []
+
     for ind in range(10):
-        analog_files = ['/home/vivek91/{0}-starts-{1}-ends-{2}.nc'.format(os.path.basename(initial_config['output.AnEn']).split('.')[0],
+        t2.link_input_data += ['$Pipeline_%s_Stage_%s_Task_%s/%s-starts-%s-ends-%s.nc'%(
+                                                            p.uid,
+                                                            s1.uid,
+                                                            anen_task_uids[ind],
+                                                            os.path.basename(initial_config['output.AnEn']).split('.')[0],
                                                             initial_config['stations.ID'][ind*10],
                                                             initial_config['stations.ID'][(ind+1)*10])]
+
+        t2.arguments.append('%s-starts-%s-ends-%s.nc'%(
+                                                        os.path.basename(initial_config['output.AnEn']).split('.')[0],
+                                                        initial_config['stations.ID'][ind*10],
+                                                        initial_config['stations.ID'][(ind+1)*10])
+                                                    )
+                                                
 
     t2.arguments.extend(analog_files)
 
@@ -212,21 +225,21 @@ if __name__ == '__main__':
     t3.cores         = 1
     t3.arguments     = [ 'evaluation.py', 
                         '--file_observation', initial_config['file.observation'],
-                        '--file_AnEn', 'analogs_%s.nc'%len(initial_config['stations.ID']),
+                        '--file_AnEn', initial_config['output.AnEn'],
                         '--stations_ID', stations_subset,
                         '--test_ID_start', initial_config['test.ID.start'],
                         '--test_ID_end', initial_config['test.ID.end'],
-                        '--nflts', '8',
-                        '--nrows', '100',
-                        '--ncols', '100'
+                        '--nflts', initial_config['num.flts'],
+                        '--nrows', initial_config['nrows'],
+                        '--ncols', initial_config['ncols']
                     ]
     t3.upload_input_data = ['./evaluation.py', './evaluation.R']
-    t3.link_input_data = ['$Pipeline_%s_$Stage_%s_$Task_%s/analogs_%s.nc'%(
-                                                                            p.uid,
-                                                                            s2.uid,
-                                                                            t2.uid,
-                                                                            len(initial_config['stations.ID'])
-                                                                        )]
+    t3.link_input_data = ['$Pipeline_%s_$Stage_%s_$Task_%s/%s'%(
+                                                                p.uid,
+                                                                s2.uid,
+                                                                t2.uid,
+                                                                initial_config['output.AnEn']
+                                                            )]
     
 
     s3.add_tasks(t3)
