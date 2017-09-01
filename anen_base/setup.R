@@ -63,7 +63,9 @@ initial_config <- function (verbose = F) {
                              num.times = num.times,
                              num.parameters = num.parameters,
                              num.stations.per.chunk = num.stations.per.chunk,
-                             num.stations = num.stations)
+                             num.stations = num.stations,
+                             nrows = nrows,
+                             ncols = ncols)
 
     if (verbose) {
         print(list.init.config)
