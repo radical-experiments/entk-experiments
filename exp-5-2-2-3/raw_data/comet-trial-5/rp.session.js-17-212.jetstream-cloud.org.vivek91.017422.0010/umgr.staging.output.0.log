@@ -1,0 +1,85 @@
+2017-09-13 16:45:43,865: umgr.staging.output.0: task-manager                    : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-09-13 16:45:43,865: umgr.staging.output.0: task-manager                    : MainThread     : INFO    :                      pid: 30503
+2017-09-13 16:45:43,865: umgr.staging.output.0: task-manager                    : MainThread     : INFO    :                      tid: MainThread
+2017-09-13 16:45:43,866: umgr.staging.output.0: task-manager                    : MainThread     : INFO    : radical.pilot        version: 0.46-v0.46.RC2@devel
+2017-09-13 16:45:44,888: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-09-13 16:45:44,888: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : start process
+2017-09-13 16:45:45,937: umgr.staging.output.0: task-manager                    : MainThread     : INFO    : recv message: alive
+2017-09-13 16:45:45,938: umgr.staging.output.0: task-manager                    : MainThread     : INFO    : initialize umgr.staging.output.0
+2017-09-13 16:45:45,942: umgr.staging.output.0: task-manager                    : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://172.30.238.6:46745',
+                                  'addr_out': 'tcp://172.30.238.6:45861',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://172.30.238.6:33014',
+                              'addr_out': 'tcp://172.30.238.6:42506',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://172.30.238.6:44659',
+                                'addr_out': 'tcp://172.30.238.6:37978',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://172.30.238.6:46007',
+                                          'addr_out': 'tcp://172.30.238.6:33847',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://172.30.238.6:35345',
+                                         'addr_out': 'tcp://172.30.238.6:45711',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://172.30.238.6:42292',
+                                            'addr_out': 'tcp://172.30.238.6:33599',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://172.30.238.6:45269',
+                                             'addr_out': 'tcp://172.30.238.6:43197',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://172.30.238.6:44594',
+                                          'addr_out': 'tcp://172.30.238.6:41410',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRStagingOutputComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2017-09-13 16:45:45,942: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-09-13 16:45:45,942: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : START: umgr.staging.output.0 register publisher log_pubsub
+2017-09-13 16:45:45,942: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:33014 for pubsub log_pubsub
+2017-09-13 16:45:45,979: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0004
+2017-09-13 16:45:45,979: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-09-13 16:45:45,979: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : START: umgr.staging.output.0 register publisher state_pubsub
+2017-09-13 16:45:45,979: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:44659 for pubsub state_pubsub
+2017-09-13 16:45:45,982: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0004
+2017-09-13 16:45:45,982: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-09-13 16:45:45,982: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : START: umgr.staging.output.0 register publisher control_pubsub
+2017-09-13 16:45:45,982: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:46745 for pubsub control_pubsub
+2017-09-13 16:45:45,985: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0004
+2017-09-13 16:45:45,985: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : parent name: umgr.staging.output.0.watch
+2017-09-13 16:45:45,985: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : start thread
+2017-09-13 16:45:45,986: umgr.staging.output.0: task-manager                    : umgr.staging.output.0.watch: DEBUG   : child name: umgr.staging.output.0.watch.thread
+2017-09-13 16:45:45,986: umgr.staging.output.0: task-manager                    : umgr.staging.output.0.watch: INFO    : child (me) initializing
+2017-09-13 16:45:45,986: umgr.staging.output.0: task-manager                    : umgr.staging.output.0.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-09-13 16:45:45,986: umgr.staging.output.0: task-manager                    : umgr.staging.output.0.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-09-13 16:45:45,986: umgr.staging.output.0: task-manager                    : umgr.staging.output.0.watch: INFO    : send alive
+2017-09-13 16:45:45,986: umgr.staging.output.0: task-manager                    : umgr.staging.output.0.watch: INFO    : put message: [umgr.staging.output.0.watch.thread] alive
+2017-09-13 16:45:45,987: umgr.staging.output.0: task-manager                    : MainThread     : INFO    : get msg: alive
+2017-09-13 16:45:45,987: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-09-13 16:45:45,987: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-09-13 16:45:45,988: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : child thread umgr.staging.output.0.watch started
+2017-09-13 16:45:45,988: umgr.staging.output.0: task-manager                    : MainThread     : INFO    : child is alive
+2017-09-13 16:45:45,988: umgr.staging.output.0: task-manager                    : MainThread     : DEBUG   : process class started child
