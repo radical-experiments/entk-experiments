@@ -1,0 +1,85 @@
+2017-08-21 09:13:49,583: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-08-21 09:13:49,583: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    :                      pid: 11568
+2017-08-21 09:13:49,583: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    :                      tid: MainThread
+2017-08-21 09:13:49,583: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    : radical.pilot        version: 0.46-v0.46.RC2@devel
+2017-08-21 09:13:50,640: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-21 09:13:50,640: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : start process
+2017-08-21 09:13:51,723: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    : recv message: alive
+2017-08-21 09:13:51,724: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    : initialize umgr.scheduling.0
+2017-08-21 09:13:51,728: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://172.30.238.6:38936',
+                                  'addr_out': 'tcp://172.30.238.6:35074',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://172.30.238.6:44428',
+                              'addr_out': 'tcp://172.30.238.6:38499',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://172.30.238.6:35128',
+                                'addr_out': 'tcp://172.30.238.6:33213',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1},
+              u'umgr_reschedule_pubsub': {'addr_in': 'tcp://172.30.238.6:32839',
+                                          'addr_out': 'tcp://172.30.238.6:44336',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1},
+              u'umgr_scheduling_queue': {'addr_in': 'tcp://172.30.238.6:40342',
+                                         'addr_out': 'tcp://172.30.238.6:44042',
+                                         u'bulk_size': 0,
+                                         u'log_level': u'debug',
+                                         u'stall_hwm': 1},
+              u'umgr_staging_input_queue': {'addr_in': 'tcp://172.30.238.6:32946',
+                                            'addr_out': 'tcp://172.30.238.6:45219',
+                                            u'bulk_size': 0,
+                                            u'log_level': u'debug',
+                                            u'stall_hwm': 1},
+              u'umgr_staging_output_queue': {'addr_in': 'tcp://172.30.238.6:40614',
+                                             'addr_out': 'tcp://172.30.238.6:41941',
+                                             u'bulk_size': 0,
+                                             u'log_level': u'debug',
+                                             u'stall_hwm': 1},
+              u'umgr_unschedule_pubsub': {'addr_in': 'tcp://172.30.238.6:35376',
+                                          'addr_out': 'tcp://172.30.238.6:45191',
+                                          u'bulk_size': 0,
+                                          u'log_level': u'debug',
+                                          u'stall_hwm': 1}},
+ u'bulk_collection_size': 100,
+ u'bulk_collection_time': 1.0,
+ 'cname': u'UMGRSchedulingComponent',
+ u'components': {},
+ u'count': 1,
+ u'db_poll_sleeptime': 1.0,
+ 'number': 0,
+ 'owner': 'umgr.0000',
+ u'scheduler': u'round_robin',
+ 'uid': 'umgr.0000'}
+2017-08-21 09:13:51,728: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-21 09:13:51,728: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : START: umgr.scheduling.0 register publisher log_pubsub
+2017-08-21 09:13:51,728: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:44428 for pubsub log_pubsub
+2017-08-21 09:13:51,731: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0005
+2017-08-21 09:13:51,731: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-21 09:13:51,731: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : START: umgr.scheduling.0 register publisher state_pubsub
+2017-08-21 09:13:51,731: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:35128 for pubsub state_pubsub
+2017-08-21 09:13:51,734: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0005
+2017-08-21 09:13:51,734: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : alive check in term
+2017-08-21 09:13:51,734: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : START: umgr.scheduling.0 register publisher control_pubsub
+2017-08-21 09:13:51,734: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : using addr tcp://172.30.238.6:38936 for pubsub control_pubsub
+2017-08-21 09:13:51,736: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0005
+2017-08-21 09:13:51,736: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : parent name: umgr.scheduling.0.watch
+2017-08-21 09:13:51,737: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : start thread
+2017-08-21 09:13:51,737: umgr.scheduling.0   : task-manager                    : umgr.scheduling.0.watch: DEBUG   : child name: umgr.scheduling.0.watch.thread
+2017-08-21 09:13:51,737: umgr.scheduling.0   : task-manager                    : umgr.scheduling.0.watch: INFO    : child (me) initializing
+2017-08-21 09:13:51,737: umgr.scheduling.0   : task-manager                    : umgr.scheduling.0.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-08-21 09:13:51,737: umgr.scheduling.0   : task-manager                    : umgr.scheduling.0.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-08-21 09:13:51,737: umgr.scheduling.0   : task-manager                    : umgr.scheduling.0.watch: INFO    : send alive
+2017-08-21 09:13:51,737: umgr.scheduling.0   : task-manager                    : umgr.scheduling.0.watch: INFO    : put message: [umgr.scheduling.0.watch.thread] alive
+2017-08-21 09:13:51,738: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    : get msg: alive
+2017-08-21 09:13:51,738: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-08-21 09:13:51,738: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-08-21 09:13:51,738: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : child thread umgr.scheduling.0.watch started
+2017-08-21 09:13:51,739: umgr.scheduling.0   : task-manager                    : MainThread     : INFO    : child is alive
+2017-08-21 09:13:51,739: umgr.scheduling.0   : task-manager                    : MainThread     : DEBUG   : process class started child
