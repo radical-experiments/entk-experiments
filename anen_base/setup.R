@@ -48,7 +48,7 @@ initial_config <- function (verbose = F) {
     # save the index numbers of computed pixels
     #save(stations.ID, file = output.computed.pixels)
 
-    list.init.config <- list(file.forecast = file.forecast,
+    list.init.config <- list(file.forecast = file.forecast,                             
                              file.observation = file.observation,
                              output.AnEn = output.AnEn,
                              #stations.ID = stations.ID,

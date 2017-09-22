@@ -25,7 +25,8 @@ resource_key = {
 
                     'xsede.supermic': 
                                     [   'module load netcdf',      
-                                        'export PATH=/home/whu/git/CAnalogsV2/build:$PATH']
+                                        'module load gcc',
+                                        'export PATH=/home/whu/git/CAnalogsV2/install/bin:$PATH']
                                 
 
                 }
