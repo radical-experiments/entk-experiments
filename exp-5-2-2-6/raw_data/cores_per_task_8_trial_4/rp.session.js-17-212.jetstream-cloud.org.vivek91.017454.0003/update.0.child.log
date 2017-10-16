@@ -1,0 +1,405 @@
+2017-10-15 09:05:33,351: update.0.child      : update.0                        : MainThread     : INFO    : python.interpreter   version: 2.7.12 (default, Nov 19 2016, 06:48:10) [GCC 5.4.0 20160609]
+2017-10-15 09:05:33,352: update.0.child      : update.0                        : MainThread     : INFO    :                      pid: 3364
+2017-10-15 09:05:33,352: update.0.child      : update.0                        : MainThread     : INFO    :                      tid: MainThread
+2017-10-15 09:05:33,353: update.0.child      : update.0                        : MainThread     : INFO    : radical.pilot        version: 0.46-v0.46.RC2@devel
+2017-10-15 09:05:34,374: update.0.child      : update.0                        : MainThread     : INFO    : initialize update.0.child
+2017-10-15 09:05:34,377: update.0.child      : update.0                        : MainThread     : INFO    : cfg: {'agents': {},
+ u'bridges': {u'control_pubsub': {'addr_in': 'tcp://172.30.238.6:43275',
+                                  'addr_out': 'tcp://172.30.238.6:44993',
+                                  u'bulk_size': 0,
+                                  u'log_level': u'debug',
+                                  u'stall_hwm': 1},
+              u'log_pubsub': {'addr_in': 'tcp://172.30.238.6:46320',
+                              'addr_out': 'tcp://172.30.238.6:43635',
+                              u'bulk_size': 0,
+                              u'log_level': u'debug',
+                              u'stall_hwm': 1},
+              u'state_pubsub': {'addr_in': 'tcp://172.30.238.6:37200',
+                                'addr_out': 'tcp://172.30.238.6:42131',
+                                u'bulk_size': 0,
+                                u'log_level': u'debug',
+                                u'stall_hwm': 1}},
+ 'cname': u'UpdateWorker',
+ u'components': {},
+ u'count': 1,
+ 'dburl': 'mongodb://user:user@ds117615.mlab.com:17615/test-10-12',
+ 'debug': 'DEBUG',
+ u'default_dburl': u'mongodb://rp:rp@ds015335.mlab.com:15335/rp',
+ 'logdir': '/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin/rp.session.js-17-212.jetstream-cloud.org.vivek91.017454.0003',
+ 'number': 0,
+ 'owner': 'rp.session.js-17-212.jetstream-cloud.org.vivek91.017454.0003',
+ 'session_id': 'rp.session.js-17-212.jetstream-cloud.org.vivek91.017454.0003'}
+2017-10-15 09:05:34,378: update.0.child      : update.0                        : MainThread     : DEBUG   : start components: {}
+2017-10-15 09:05:34,378: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-10-15 09:05:34,378: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register publisher log_pubsub
+2017-10-15 09:05:34,378: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://172.30.238.6:46320 for pubsub log_pubsub
+2017-10-15 09:05:34,383: update.0.child      : update.0                        : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub.0000
+2017-10-15 09:05:34,383: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-10-15 09:05:34,383: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register publisher state_pubsub
+2017-10-15 09:05:34,383: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://172.30.238.6:37200 for pubsub state_pubsub
+2017-10-15 09:05:34,386: update.0.child      : update.0                        : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub.0000
+2017-10-15 09:05:34,386: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-10-15 09:05:34,386: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register publisher control_pubsub
+2017-10-15 09:05:34,386: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://172.30.238.6:43275 for pubsub control_pubsub
+2017-10-15 09:05:34,399: update.0.child      : update.0                        : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub.0000
+2017-10-15 09:05:34,399: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-10-15 09:05:34,399: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register subscriber update.0.child.subscriber._cancel_monitor_cb
+2017-10-15 09:05:34,400: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://172.30.238.6:44993 for pubsub control_pubsub
+2017-10-15 09:05:34,403: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.subscriber._cancel_monitor_cb
+2017-10-15 09:05:34,403: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-10-15 09:05:34,403: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : child name: update.0.child.subscriber._cancel_monitor_cb.thread
+2017-10-15 09:05:34,404: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2017-10-15 09:05:34,404: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,404: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-10-15 09:05:34,404: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2017-10-15 09:05:34,404: update.0.child      : update.0                        : update.0.child.subscriber._cancel_monitor_cb: INFO    : put message: [update.0.child.subscriber._cancel_monitor_cb.thread] alive
+2017-10-15 09:05:34,405: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-10-15 09:05:34,405: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,405: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-10-15 09:05:34,405: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.subscriber._cancel_monitor_cb started
+2017-10-15 09:05:34,406: update.0.child      : update.0                        : MainThread     : DEBUG   : update.0.child registered control_pubsub subscriber update.0.child.subscriber._cancel_monitor_cb
+2017-10-15 09:05:34,675: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-10-15 09:05:34,676: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register subscriber update.0.child.subscriber._state_cb
+2017-10-15 09:05:34,676: update.0.child      : update.0                        : MainThread     : DEBUG   : using addr tcp://172.30.238.6:42131 for pubsub state_pubsub
+2017-10-15 09:05:34,679: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.subscriber._state_cb
+2017-10-15 09:05:34,679: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-10-15 09:05:34,679: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : child name: update.0.child.subscriber._state_cb.thread
+2017-10-15 09:05:34,680: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: INFO    : child (me) initializing
+2017-10-15 09:05:34,680: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,680: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-10-15 09:05:34,680: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: INFO    : send alive
+2017-10-15 09:05:34,680: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: INFO    : put message: [update.0.child.subscriber._state_cb.thread] alive
+2017-10-15 09:05:34,681: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-10-15 09:05:34,681: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,681: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-10-15 09:05:34,681: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.subscriber._state_cb started
+2017-10-15 09:05:34,681: update.0.child      : update.0                        : MainThread     : DEBUG   : update.0.child registered state_pubsub subscriber update.0.child.subscriber._state_cb
+2017-10-15 09:05:34,681: update.0.child      : update.0                        : MainThread     : DEBUG   : alive check in term
+2017-10-15 09:05:34,681: update.0.child      : update.0                        : MainThread     : DEBUG   : START: update.0.child register idler update.0.child.idler._idle_cb
+2017-10-15 09:05:34,682: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.idler._idle_cb
+2017-10-15 09:05:34,682: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-10-15 09:05:34,682: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : child name: update.0.child.idler._idle_cb.thread
+2017-10-15 09:05:34,683: update.0.child      : update.0                        : update.0.child.idler._idle_cb: INFO    : child (me) initializing
+2017-10-15 09:05:34,683: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,683: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-10-15 09:05:34,683: update.0.child      : update.0                        : update.0.child.idler._idle_cb: INFO    : send alive
+2017-10-15 09:05:34,683: update.0.child      : update.0                        : update.0.child.idler._idle_cb: INFO    : put message: [update.0.child.idler._idle_cb.thread] alive
+2017-10-15 09:05:34,684: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-10-15 09:05:34,684: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,684: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-10-15 09:05:34,684: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.idler._idle_cb started
+2017-10-15 09:05:34,684: update.0.child      : update.0                        : MainThread     : DEBUG   : update.0.child registered idler update.0.child.idler._idle_cb
+2017-10-15 09:05:34,685: update.0.child      : update.0                        : MainThread     : INFO    : child (me) initializing
+2017-10-15 09:05:34,685: update.0.child      : update.0                        : MainThread     : DEBUG   : parent name: update.0.child.watch
+2017-10-15 09:05:34,685: update.0.child      : update.0                        : MainThread     : DEBUG   : start thread
+2017-10-15 09:05:34,686: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : child name: update.0.child.watch.thread
+2017-10-15 09:05:34,686: update.0.child      : update.0                        : update.0.child.watch: INFO    : child (me) initializing
+2017-10-15 09:05:34,686: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,686: update.0.child      : update.0                        : update.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-10-15 09:05:34,686: update.0.child      : update.0                        : update.0.child.watch: INFO    : send alive
+2017-10-15 09:05:34,686: update.0.child      : update.0                        : update.0.child.watch: INFO    : put message: [update.0.child.watch.thread] alive
+2017-10-15 09:05:34,687: update.0.child      : update.0                        : MainThread     : INFO    : get msg: alive
+2017-10-15 09:05:34,687: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-10-15 09:05:34,687: update.0.child      : update.0                        : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-10-15 09:05:34,687: update.0.child      : update.0                        : MainThread     : DEBUG   : child thread update.0.child.watch started
+2017-10-15 09:05:34,687: update.0.child      : update.0                        : MainThread     : INFO    : child (me) is alive
+2017-10-15 09:05:34,687: update.0.child      : update.0                        : MainThread     : INFO    : send alive
+2017-10-15 09:05:34,688: update.0.child      : update.0                        : MainThread     : INFO    : send message: [update.0.child] alive
+2017-10-15 09:05:41,293: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked pilot.0000 [PMGR_LAUNCHING_PENDING] update.0.child
+2017-10-15 09:05:41,343: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:05:41,343: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked pilot.0000 [PMGR_LAUNCHING] update.0.child
+2017-10-15 09:05:42,751: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:05:52,291: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked pilot.0000 [PMGR_ACTIVE_PENDING] update.0.child
+2017-10-15 09:05:52,341: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:38,017: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked pilot.0000 [PMGR_ACTIVE] update.0.child
+2017-10-15 09:06:38,066: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:49,328: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:49,377: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:49,377: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:49,377: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:49,377: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:49,377: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:51,023: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:52,319: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:52,368: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:53,396: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:53,444: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:53,445: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:53,445: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:53,476: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:54,562: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:06:54,611: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 4, 'nUpserted': 0, 'nMatched': 4, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:54,611: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:06:54,619: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:06:54,765: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:06:54,767: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:06:54,767: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000000 [DONE] update.0.child
+2017-10-15 09:06:54,901: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:54,902: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:54,902: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:54,903: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:54,904: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:54,980: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:54,980: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:54,981: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:54,982: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:54,982: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,052: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,053: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,054: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,054: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,054: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,135: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,136: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,136: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,137: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,137: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,198: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,199: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,200: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,201: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,201: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,275: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,276: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,277: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,278: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,278: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,351: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,352: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,353: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,354: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,354: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,437: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,438: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,438: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,439: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,439: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,519: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,521: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,522: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,522: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,522: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,583: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,691: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 51, 'nUpserted': 0, 'nMatched': 51, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:55,692: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,692: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,692: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,692: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,693: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,693: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,693: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,693: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,693: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,701: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,702: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,703: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,704: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,704: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,759: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,760: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,760: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,762: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,762: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,817: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,819: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,820: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,821: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,821: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,874: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,875: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,876: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,877: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,877: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,932: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,934: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:55,934: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,935: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:55,935: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:55,969: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:55,996: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:56,027: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,053: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:56,077: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,110: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:56,136: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:56,160: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,188: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:56,213: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,238: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:56,263: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:56,288: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,313: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:56,339: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,363: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_SCHEDULING] update.0.child
+2017-10-15 09:06:56,388: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,412: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_STAGING_INPUT] update.0.child
+2017-10-15 09:06:56,437: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [AGENT_STAGING_INPUT_PENDING] update.0.child
+2017-10-15 09:06:56,462: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [UMGR_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:57,142: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 54, 'nUpserted': 0, 'nMatched': 54, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:57,587: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,620: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,644: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,676: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,701: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,726: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,751: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,776: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:57,801: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:58,193: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 9, 'nUpserted': 0, 'nMatched': 9, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:58,930: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:58,958: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:58,985: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,013: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,041: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,077: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,115: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,145: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,195: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 8, 'nUpserted': 0, 'nMatched': 8, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:06:59,195: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:59,198: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:59,227: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,255: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,283: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,319: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,346: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,381: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,406: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,430: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,455: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,484: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,512: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,540: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,568: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,595: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,622: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,649: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,675: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,699: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,724: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,749: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,772: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,795: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,819: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,842: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,866: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:06:59,889: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:06:59,913: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:06:59,944: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:06:59,967: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:06:59,991: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:07:00,014: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:07:00,037: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:07:00,059: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_STAGING_INPUT] update.0.child
+2017-10-15 09:07:00,252: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 35, 'nUpserted': 0, 'nMatched': 35, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:01,180: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:07:01,209: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:07:01,258: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 2, 'nUpserted': 0, 'nMatched': 2, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:01,259: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:07:01,266: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:07:01,292: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:07:01,317: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:07:01,341: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:07:01,364: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:07:01,388: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:07:01,411: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:07:01,435: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:07:01,459: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:07:01,483: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:07:01,506: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:07:01,529: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:07:01,552: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:07:01,575: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:07:01,599: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:07:01,622: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:07:01,645: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:07:01,668: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:07:01,692: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:07:01,715: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:07:01,738: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:07:01,769: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_SCHEDULING_PENDING] update.0.child
+2017-10-15 09:07:01,793: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_SCHEDULING] update.0.child
+2017-10-15 09:07:01,824: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_EXECUTING_PENDING] update.0.child
+2017-10-15 09:07:01,849: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_EXECUTING] update.0.child
+2017-10-15 09:07:02,314: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 26, 'nUpserted': 0, 'nMatched': 26, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:31,590: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:31,638: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:32,715: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:32,763: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:32,763: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:32,766: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:32,792: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:32,824: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:32,849: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:32,874: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:32,898: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:32,921: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:33,070: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:33,071: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:33,071: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:33,071: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:33,074: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:33,074: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:33,074: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:33,074: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:33,075: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000009 [DONE] update.0.child
+2017-10-15 09:07:33,075: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000001 [DONE] update.0.child
+2017-10-15 09:07:33,075: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000002 [DONE] update.0.child
+2017-10-15 09:07:33,075: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000015 [DONE] update.0.child
+2017-10-15 09:07:34,095: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,195: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 21, 'nUpserted': 0, 'nMatched': 21, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:34,247: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,247: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,248: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,248: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,248: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,248: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,248: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:34,255: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:34,255: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:34,255: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:34,256: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:34,256: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:34,256: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:34,256: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:34,256: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000008 [DONE] update.0.child
+2017-10-15 09:07:34,257: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000007 [DONE] update.0.child
+2017-10-15 09:07:34,257: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000006 [DONE] update.0.child
+2017-10-15 09:07:34,257: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000010 [DONE] update.0.child
+2017-10-15 09:07:34,257: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000003 [DONE] update.0.child
+2017-10-15 09:07:34,257: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000005 [DONE] update.0.child
+2017-10-15 09:07:34,257: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000004 [DONE] update.0.child
+2017-10-15 09:07:35,281: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:35,382: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 22, 'nUpserted': 0, 'nMatched': 22, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:36,460: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,508: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:36,509: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,514: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,541: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,567: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,593: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,620: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,646: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,672: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,699: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,725: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,752: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,787: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [AGENT_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,812: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,962: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,962: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,963: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,963: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,963: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [UMGR_STAGING_OUTPUT_PENDING] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [UMGR_STAGING_OUTPUT] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000011 [DONE] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000013 [DONE] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000016 [DONE] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000012 [DONE] update.0.child
+2017-10-15 09:07:36,965: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked unit.000014 [DONE] update.0.child
+2017-10-15 09:07:38,490: update.0.child      : update.0                        : update.0.child.idler._idle_cb: DEBUG   : bulk update result: {'nModified': 28, 'nUpserted': 0, 'nMatched': 28, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}
+2017-10-15 09:07:42,115: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulked pilot.0000 [CANCELED] update.0.child
+2017-10-15 09:07:42,164: update.0.child      : update.0                        : update.0.child.subscriber._state_cb: DEBUG   : bulk update result: {'nModified': 1, 'nUpserted': 0, 'nMatched': 1, 'writeErrors': [], 'upserted': [], 'writeConcernErrors': [], 'nRemoved': 0, 'nInserted': 0}

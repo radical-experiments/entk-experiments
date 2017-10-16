@@ -1,0 +1,2107 @@
+{
+    "pilot": [
+        {
+            "_id": "pilot.0000", 
+            "cfg": {
+                "agent_launch_method": "SSH", 
+                "bridges": {
+                    "agent_executing_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_reschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_scheduling_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_input_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_staging_output_queue": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "agent_unschedule_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "control_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "components": {
+                    "AgentExecutingComponent": {
+                        "count": 1
+                    }, 
+                    "AgentSchedulingComponent": {
+                        "count": 1
+                    }, 
+                    "AgentStagingInputComponent": {
+                        "count": 1
+                    }, 
+                    "AgentStagingOutputComponent": {
+                        "count": 1
+                    }, 
+                    "UpdateWorker": {
+                        "count": 1
+                    }
+                }, 
+                "cores": 160, 
+                "cores_per_node": 20, 
+                "cu_post_exec": null, 
+                "cu_pre_exec": null, 
+                "cu_tmp": null, 
+                "db_poll_sleeptime": 1.0, 
+                "dburl": "mongodb://user:user@ds117615.mlab.com:17615/test-10-12", 
+                "debug": 10, 
+                "export_to_cu": null, 
+                "logdir": ".", 
+                "lrms": "TORQUE", 
+                "max_io_loglength": 1024, 
+                "mode": "shared", 
+                "mpi_launch_method": "MPIEXEC", 
+                "owner": "agent_0", 
+                "pilot_id": "pilot.0000", 
+                "pilot_sandbox": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+                "resource_cfg": {
+                    "agent_launch_method": "SSH", 
+                    "agent_scheduler": "CONTINUOUS", 
+                    "agent_spawner": "POPEN", 
+                    "cores_per_node": "20", 
+                    "default_queue": "workq", 
+                    "default_remote_workdir": "/work/$USER", 
+                    "description": "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)", 
+                    "filesystem_endpoint": "gsisftp://supermic.cct-lsu.xsede.org:2222/", 
+                    "gsissh": {
+                        "filesystem_endpoint": "gsisftp://supermic.cct-lsu.xsede.org:2222/", 
+                        "job_manager_endpoint": "torque+gsissh://supermic.cct-lsu.xsede.org:2222/"
+                    }, 
+                    "job_manager_endpoint": "torque+gsissh://supermic.cct-lsu.xsede.org:2222/", 
+                    "label": "xsede.supermic_ssh", 
+                    "lrms": "TORQUE", 
+                    "mpi_launch_method": "MPIEXEC", 
+                    "notes": "Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.", 
+                    "pre_bootstrap_1": [
+                        "module load python"
+                    ], 
+                    "python_dist": "default", 
+                    "rp_version": "local", 
+                    "schemas": [
+                        "gsissh", 
+                        "ssh"
+                    ], 
+                    "ssh": {
+                        "filesystem_endpoint": "sftp://supermic.cct-lsu.xsede.org/", 
+                        "job_manager_endpoint": "torque+ssh://supermic.cct-lsu.xsede.org/"
+                    }, 
+                    "task_launch_method": "SSH", 
+                    "valid_roots": [
+                        "/work"
+                    ], 
+                    "virtenv_mode": "create"
+                }, 
+                "resource_sandbox": "/work/vivek91/radical.pilot.sandbox", 
+                "runtime": 60, 
+                "scheduler": "CONTINUOUS", 
+                "session_id": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009", 
+                "session_sandbox": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009", 
+                "spawner": "POPEN", 
+                "staging_area": "staging_area", 
+                "staging_schema": "staging", 
+                "target": "local", 
+                "task_launch_method": "SSH"
+            }, 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [
+                {
+                    "arg": [], 
+                    "cmd": "cancel_pilot"
+                }
+            ], 
+            "control": "pmgr", 
+            "description": {
+                "access_schema": "gsissh", 
+                "candidate_hosts": null, 
+                "cleanup": null, 
+                "cores": 160, 
+                "exit_on_error": false, 
+                "memory": null, 
+                "project": "TG-MCB090174", 
+                "queue": null, 
+                "resource": "xsede.supermic", 
+                "runtime": 60, 
+                "sandbox": null
+            }, 
+            "finished": 1507999041.482766, 
+            "log": null, 
+            "logfile": "2017-10-14 11:36:14,934: agent_0             : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]\n2017-10-14 11:36:14,940: agent_0             : MainProcess                     : MainThread     : INFO    :                      pid: 101114\n2017-10-14 11:36:14,940: agent_0             : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2017-10-14 11:36:14,940: agent_0             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: 0.46-v0.46.RC2@devel\n2017-10-14 11:36:14,940: agent_0             : MainProcess                     : MainThread     : INFO    : using database mongodb://user:user@ds117615.mlab.com:17615/test-10-12\n2017-10-14 11:36:15,016: agent_0             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/vivek91/r", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "pmgr": "pmgr.0000", 
+            "resource": "xsede.supermic", 
+            "resource_details": {
+                "lm_detail": null, 
+                "lm_info": null
+            }, 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "session": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009", 
+            "state": "CANCELED", 
+            "states": [
+                "NEW", 
+                "PMGR_LAUNCHING_PENDING", 
+                "PMGR_LAUNCHING", 
+                "PMGR_ACTIVE_PENDING", 
+                "PMGR_ACTIVE", 
+                "PMGR_ACTIVE", 
+                "CANCELED", 
+                "CANCELED"
+            ], 
+            "stderr": "2017-10-14 11:36:14,389: radical.saga        : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]\n2017-10-14 11:36:14,390: radical.saga        : MainProcess                     : MainThread     : INFO    :                      pid: 101114\n2017-10-14 11:36:14,390: radical.saga        : MainProcess                     : MainThread     : INFO    :                      tid: MainThread\n2017-10-14 11:36:14,390: radical.saga        : MainProcess                     : MainThread     : INFO    : radical.saga         version: 0.46-v0.46.RC2@devel\n2017-10-14 11:36:14,425: radical.pilot       : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]\n2017-10-14 11:36:14,426: radical.pilot       : MainProcess                     : MainThread", 
+            "stdout": "agent_0.bootstrap_3 start\nbootstrap agent agent_0\nstartup agent agent_0\n\u001b[92m                                                                              ok\n\u001b[39m\u001b[0m{'agent_launch_method': 'SSH',\n 'agent_name': 'agent_0',\n 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.120:46626',\n                                       'addr_out': 'tcp://204.90.41.120:35488',\n                                       'bulk_size': 0,\n                                       'log_level': 'debug',\n                                       'stall_hwm': 1},\n             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.120:37991',\n                                         'addr_out': 'tcp://204.90.41.120:39993',\n                                         'bulk_size': 0,\n                                         'log_level': 'debug',\n                                         'stall_hwm': 1},\n             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.120:37634',\n                                        'addr_ou", 
+            "type": "pilot", 
+            "uid": "pilot.0000", 
+            "unit_ids": [
+                "unit.000000", 
+                "unit.000015", 
+                "unit.000007", 
+                "unit.000006", 
+                "unit.000005", 
+                "unit.000016", 
+                "unit.000008", 
+                "unit.000012", 
+                "unit.000001", 
+                "unit.000003", 
+                "unit.000002", 
+                "unit.000004", 
+                "unit.000009", 
+                "unit.000010", 
+                "unit.000013", 
+                "unit.000011", 
+                "unit.000014"
+            ]
+        }
+    ], 
+    "pmgr": [
+        {
+            "_id": "pmgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:43068", 
+                        "addr_out": "tcp://172.30.238.6:46279", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:37929", 
+                        "addr_out": "tcp://172.30.238.6:39161", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "pmgr_launching_queue": {
+                        "addr_in": "tcp://172.30.238.6:35471", 
+                        "addr_out": "tcp://172.30.238.6:35655", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:33484", 
+                        "addr_out": "tcp://172.30.238.6:34339", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "components": {
+                    "PMGRLaunchingComponent": {
+                        "count": 1
+                    }
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "owner": "pmgr.0000", 
+                "uid": "pmgr.0000"
+            }, 
+            "type": "pmgr", 
+            "uid": "pmgr.0000"
+        }
+    ], 
+    "session": {
+        "_id": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009", 
+        "cfg": {
+            "bridges": {
+                "control_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "log_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }, 
+                "state_pubsub": {
+                    "bulk_size": 0, 
+                    "log_level": "debug", 
+                    "stall_hwm": 1
+                }
+            }, 
+            "components": {
+                "UpdateWorker": {
+                    "count": 1
+                }
+            }, 
+            "dburl": "mongodb://user:user@ds117615.mlab.com:17615/test-10-12", 
+            "debug": "DEBUG", 
+            "default_dburl": "mongodb://rp:rp@ds015335.mlab.com:15335/rp", 
+            "logdir": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009", 
+            "owner": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009", 
+            "session_id": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009"
+        }, 
+        "connected": 1507998899.146122, 
+        "created": 1507998898.836339, 
+        "type": "session", 
+        "uid": "rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009"
+    }, 
+    "umgr": [
+        {
+            "_id": "umgr.0000", 
+            "cfg": {
+                "bridges": {
+                    "control_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:43068", 
+                        "addr_out": "tcp://172.30.238.6:46279", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "log_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:37929", 
+                        "addr_out": "tcp://172.30.238.6:39161", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "state_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:33484", 
+                        "addr_out": "tcp://172.30.238.6:34339", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_reschedule_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:37503", 
+                        "addr_out": "tcp://172.30.238.6:37661", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_scheduling_queue": {
+                        "addr_in": "tcp://172.30.238.6:43455", 
+                        "addr_out": "tcp://172.30.238.6:35113", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_input_queue": {
+                        "addr_in": "tcp://172.30.238.6:43970", 
+                        "addr_out": "tcp://172.30.238.6:35265", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_staging_output_queue": {
+                        "addr_in": "tcp://172.30.238.6:46143", 
+                        "addr_out": "tcp://172.30.238.6:42497", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }, 
+                    "umgr_unschedule_pubsub": {
+                        "addr_in": "tcp://172.30.238.6:43816", 
+                        "addr_out": "tcp://172.30.238.6:45325", 
+                        "bulk_size": 0, 
+                        "log_level": "debug", 
+                        "stall_hwm": 1
+                    }
+                }, 
+                "bulk_collection_size": 100, 
+                "bulk_collection_time": 1.0, 
+                "components": {
+                    "UMGRSchedulingComponent": {
+                        "count": 1
+                    }, 
+                    "UMGRStagingInputComponent": {
+                        "count": 1
+                    }, 
+                    "UMGRStagingOutputComponent": {
+                        "count": 1
+                    }
+                }, 
+                "db_poll_sleeptime": 1.0, 
+                "owner": "umgr.0000", 
+                "scheduler": "round_robin", 
+                "uid": "umgr.0000"
+            }, 
+            "type": "umgr", 
+            "uid": "umgr.0000"
+        }
+    ], 
+    "unit": [
+        {
+            "_id": "unit.000000", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-f", 
+                    "grompp.mdp", 
+                    "-c", 
+                    "input.gro", 
+                    "-p", 
+                    "topol.top", 
+                    "-o", 
+                    "topol.tpr"
+                ], 
+                "cleanup": false, 
+                "cores": 1, 
+                "environment": null, 
+                "executable": "gmx grompp", 
+                "input_staging": [
+                    {
+                        "action": "Link", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "pilot:///grompp.mdp", 
+                        "target": "grompp.mdp", 
+                        "uid": "sd.0003"
+                    }, 
+                    {
+                        "action": "Link", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "pilot:///input.gro", 
+                        "target": "input.gro", 
+                        "uid": "sd.0004"
+                    }, 
+                    {
+                        "action": "Link", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "pilot:///topol.top", 
+                        "target": "topol.top", 
+                        "uid": "sd.0005"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0000,radical.entk.stage.0000,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0000,radical.entk.stage.0000,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic120:0"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nule type 'SOL'\nExcluding 1 bonded neighbours molecule type 'NA'\nExcluding 1 bonded neighbours molecule type 'CL'\nSetting gen_seed to 125292881\nVelocities were taken from a Maxwell distribution at 355 K\nRemoving all charge groups because cutoff-scheme=Verlet\nNumber of degrees of freedom in T-Coupling group System is 28510.00\n\nNOTE 1 [file grompp.mdp]:\n  You are using geometric combination rules in LJ-PME, but your non-bonded\n  C6 parameters do not follow these rules. This will introduce very small\n  errors in the forces and energies in your simulations. If your system is\n  homogeneous, consider using dispersion correction for the total energy\n  and pressure.\n\nEstimate for the relative computational load of the PME mesh part: 0.25\n\nThere was 1 note\n\ngcq#411: \"You see it through a charmed medium: you can not discern that the gilding is slime and the silk draperies cobwebs; that the marble is sordid slate, and the polished woods mere refuse chips and scale bark.\" (Mr. Rochester in Jane Eyre by Charlotte Bronte)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000/STDERR", 
+            "stdout": "turning H bonds into constraints...\nturning H bonds into constraints...\nturning H bonds into constraints...\nturning H bonds into constraints...\nAnalysing residue names:\nThere are:    40    Protein residues\nThere are:  4488      Water residues\nThere are:    12        Ion residues\nAnalysing Protein...\nAnalysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...\nDetermining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 355 K\nCalculated rlist for 1x1 atom pair-list as 1.114 nm, buffer size 0.114 nm\nSet rlist, assuming 4x4 atom pair-list, to 1.041 nm, buffer size 0.041 nm\nCalculating fourier grid dimensions for X Y Z\nUsing a fourier grid of 52x52x52, spacing 0.096 0.096 0.096\nThis run will generate roughly 1 Mb of data\n", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000000", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000000/"
+        }, 
+        {
+            "_id": "unit.000015", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0020"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0016,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0016,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 140, 
+                "task_slots": [
+                    "smic137:0", 
+                    "smic137:1", 
+                    "smic137:2", 
+                    "smic137:3", 
+                    "smic137:4", 
+                    "smic137:5", 
+                    "smic137:6", 
+                    "smic137:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\n later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.826       30.122       55.9\n                 (ns/day)    (hour/ns)\nPerformance:        2.645        9.075\n\ngcq#356: \"He's using code that only you and I know\" (Kate Bush)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000015/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000015/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000015", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000015/"
+        }, 
+        {
+            "_id": "unit.000007", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0012"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0002,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0002,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 60, 
+                "task_slots": [
+                    "smic127:0", 
+                    "smic127:1", 
+                    "smic127:2", 
+                    "smic127:3", 
+                    "smic127:4", 
+                    "smic127:5", 
+                    "smic127:6", 
+                    "smic127:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\n or (at your option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.767       28.599       58.6\n                 (ns/day)    (hour/ns)\nPerformance:        2.785        8.616\n\ngcq#73: \"One Cross Each\" (Monty Python)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000007/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000007/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000007", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000007/"
+        }, 
+        {
+            "_id": "unit.000006", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0011"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0003,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0003,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 48, 
+                "task_slots": [
+                    "smic125:8", 
+                    "smic125:9", 
+                    "smic125:10", 
+                    "smic125:11", 
+                    "smic125:12", 
+                    "smic125:13", 
+                    "smic125:14", 
+                    "smic125:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\ntion) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.810       32.187       52.2\n                 (ns/day)    (hour/ns)\nPerformance:        2.475        9.697\n\ngcq#55: \"You Look Better Upside Down\" (Throwing Muses)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000006/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000006/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000006", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000006/"
+        }, 
+        {
+            "_id": "unit.000005", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0010"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0008,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0008,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 40, 
+                "task_slots": [
+                    "smic125:0", 
+                    "smic125:1", 
+                    "smic125:2", 
+                    "smic125:3", 
+                    "smic125:4", 
+                    "smic125:5", 
+                    "smic125:6", 
+                    "smic125:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nr version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.859       32.388       52.1\n                 (ns/day)    (hour/ns)\nPerformance:        2.460        9.758\n\ngcq#86: \"I Don't Want to Catch Anybody Not Drinking.\" (Monty Python)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000005/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000005/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000005", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000005/"
+        }, 
+        {
+            "_id": "unit.000016", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0021"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0011,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0011,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 148, 
+                "task_slots": [
+                    "smic137:8", 
+                    "smic137:9", 
+                    "smic137:10", 
+                    "smic137:11", 
+                    "smic137:12", 
+                    "smic137:13", 
+                    "smic137:14", 
+                    "smic137:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nur option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.806       30.646       54.8\n                 (ns/day)    (hour/ns)\nPerformance:        2.599        9.233\n\ngcq#177: \"Whatever Happened to Pong ?\" (F. Black)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000016/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000016/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000016", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000016/"
+        }, 
+        {
+            "_id": "unit.000008", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0013"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0013,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0013,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 68, 
+                "task_slots": [
+                    "smic127:8", 
+                    "smic127:9", 
+                    "smic127:10", 
+                    "smic127:11", 
+                    "smic127:12", 
+                    "smic127:13", 
+                    "smic127:14", 
+                    "smic127:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "UMGR_SCHEDULING_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nat your option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.764       29.163       57.5\n                 (ns/day)    (hour/ns)\nPerformance:        2.732        8.786\n\ngcq#182: \"It is Lunchtime\" (A.R. Van Buuren)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000008/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000008/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000008", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000008/"
+        }, 
+        {
+            "_id": "unit.000012", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0017"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0014,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0014,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 108, 
+                "task_slots": [
+                    "smic135:8", 
+                    "smic135:9", 
+                    "smic135:10", 
+                    "smic135:11", 
+                    "smic135:12", 
+                    "smic135:13", 
+                    "smic135:14", 
+                    "smic135:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\n later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.853       30.280       55.7\n                 (ns/day)    (hour/ns)\nPerformance:        2.631        9.123\n\ngcq#46: \"I Am Testing Your Grey Matter\" (Red Hot Chili Peppers)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000012/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000012/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000012", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000012/"
+        }, 
+        {
+            "_id": "unit.000001", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0006"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0015,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0015,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 0, 
+                "task_slots": [
+                    "smic120:0", 
+                    "smic120:1", 
+                    "smic120:2", 
+                    "smic120:3", 
+                    "smic120:4", 
+                    "smic120:5", 
+                    "smic120:6", 
+                    "smic120:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nyour option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       17.291       32.741       52.8\n                 (ns/day)    (hour/ns)\nPerformance:        2.433        9.864\n\ngcq#42: \"May the Force Be With You\" (Star Wars)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000001/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000001/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000001", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000001/"
+        }, 
+        {
+            "_id": "unit.000003", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0008"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0005,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0005,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 20, 
+                "task_slots": [
+                    "smic121:0", 
+                    "smic121:1", 
+                    "smic121:2", 
+                    "smic121:3", 
+                    "smic121:4", 
+                    "smic121:5", 
+                    "smic121:6", 
+                    "smic121:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nour option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.867       32.274       52.3\n                 (ns/day)    (hour/ns)\nPerformance:        2.468        9.724\n\ngcq#146: \"It's Against the Rules\" (Pulp Fiction)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000003/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000003/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000003", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000003/"
+        }, 
+        {
+            "_id": "unit.000002", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0007"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0010,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0010,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 8, 
+                "task_slots": [
+                    "smic120:8", 
+                    "smic120:9", 
+                    "smic120:10", 
+                    "smic120:11", 
+                    "smic120:12", 
+                    "smic120:13", 
+                    "smic120:14", 
+                    "smic120:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nat your option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       17.178       32.672       52.6\n                 (ns/day)    (hour/ns)\nPerformance:        2.438        9.843\n\ngcq#16: \"Stop Drinking My Beer !\" (The Amps)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000002/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000002/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000002", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000002/"
+        }, 
+        {
+            "_id": "unit.000004", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0009"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0006,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0006,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 28, 
+                "task_slots": [
+                    "smic121:8", 
+                    "smic121:9", 
+                    "smic121:10", 
+                    "smic121:11", 
+                    "smic121:12", 
+                    "smic121:13", 
+                    "smic121:14", 
+                    "smic121:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\n\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.855       32.334       52.1\n                 (ns/day)    (hour/ns)\nPerformance:        2.464        9.742\n\ngcq#160: \"If You Don't Like Cool Quotes Check Your GMXRC File\" (Your Sysadmin)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000004/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000004/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000004", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000004/"
+        }, 
+        {
+            "_id": "unit.000009", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0014"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0001,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0001,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 80, 
+                "task_slots": [
+                    "smic134:0", 
+                    "smic134:1", 
+                    "smic134:2", 
+                    "smic134:3", 
+                    "smic134:4", 
+                    "smic134:5", 
+                    "smic134:6", 
+                    "smic134:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nCS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.777       32.011       52.4\n                 (ns/day)    (hour/ns)\nPerformance:        2.489        9.644\n\ngcq#103: \"Take Your Medications and Preparations and Ram It Up Your Snout\" (F. Zappa)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000009/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000009/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000009", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000009/"
+        }, 
+        {
+            "_id": "unit.000010", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0015"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0009,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0009,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 88, 
+                "task_slots": [
+                    "smic134:8", 
+                    "smic134:9", 
+                    "smic134:10", 
+                    "smic134:11", 
+                    "smic134:12", 
+                    "smic134:13", 
+                    "smic134:14", 
+                    "smic134:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nption) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.791       31.489       53.3\n                 (ns/day)    (hour/ns)\nPerformance:        2.530        9.487\n\ngcq#377: \"How will I know it's working right?\" (MGMT)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000010/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000010/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000010", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000010/"
+        }, 
+        {
+            "_id": "unit.000013", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0018"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0004,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0004,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 120, 
+                "task_slots": [
+                    "smic136:0", 
+                    "smic136:1", 
+                    "smic136:2", 
+                    "smic136:3", 
+                    "smic136:4", 
+                    "smic136:5", 
+                    "smic136:6", 
+                    "smic136:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nater version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.918       31.720       53.3\n                 (ns/day)    (hour/ns)\nPerformance:        2.511        9.556\n\ngcq#283: \"Cowardly refusing to create an empty archive\" (GNU tar)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000013/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000013/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000013", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000013/"
+        }, 
+        {
+            "_id": "unit.000011", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0016"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0012,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0012,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 100, 
+                "task_slots": [
+                    "smic135:0", 
+                    "smic135:1", 
+                    "smic135:2", 
+                    "smic135:3", 
+                    "smic135:4", 
+                    "smic135:5", 
+                    "smic135:6", 
+                    "smic135:7"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\n (at your option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.803       29.671       56.6\n                 (ns/day)    (hour/ns)\nPerformance:        2.685        8.939\n\ngcq#142: \"I Solve Problems\" (Pulp Fiction)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000011/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000011/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000011", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000011/"
+        }, 
+        {
+            "_id": "unit.000014", 
+            "client_sandbox": "/home/vivek91/repos/entk-experiments/exp-5-2-2-6/bin", 
+            "cmd": [], 
+            "control": null, 
+            "description": {
+                "arguments": [
+                    "-s", 
+                    "topol.tpr", 
+                    "-c", 
+                    "md.out"
+                ], 
+                "cleanup": false, 
+                "cores": 8, 
+                "environment": null, 
+                "executable": "gmx mdrun", 
+                "input_staging": [
+                    {
+                        "action": "Copy", 
+                        "flags": [
+                            "CreateParents", 
+                            "SkipFailed"
+                        ], 
+                        "priority": 0, 
+                        "source": "/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000000//topol.tpr", 
+                        "target": "topol.tpr", 
+                        "uid": "sd.0019"
+                    }
+                ], 
+                "kernel": null, 
+                "mpi": false, 
+                "name": "radical.entk.task.0007,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+                "output_staging": [], 
+                "pilot": null, 
+                "post_exec": [], 
+                "pre_exec": [
+                    "module load gromacs/5.0/INTEL-140-MVAPICH2-2.0", 
+                    "export OMP_NUM_THREADS=8"
+                ], 
+                "restartable": false, 
+                "stderr": null, 
+                "stdout": null
+            }, 
+            "exit_code": 0, 
+            "name": "radical.entk.task.0007,radical.entk.stage.0001,radical.entk.pipeline.0000", 
+            "opaque_slots": {
+                "lm_info": {}, 
+                "task_offsets": 128, 
+                "task_slots": [
+                    "smic136:8", 
+                    "smic136:9", 
+                    "smic136:10", 
+                    "smic136:11", 
+                    "smic136:12", 
+                    "smic136:13", 
+                    "smic136:14", 
+                    "smic136:15"
+                ]
+            }, 
+            "pilot": "pilot.0000", 
+            "pilot_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/", 
+            "resource_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox", 
+            "state": "DONE", 
+            "states": [
+                "NEW", 
+                "UMGR_SCHEDULING_PENDING", 
+                "UMGR_SCHEDULING", 
+                "UMGR_STAGING_INPUT_PENDING", 
+                "UMGR_STAGING_INPUT", 
+                "AGENT_STAGING_INPUT_PENDING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_INPUT", 
+                "AGENT_SCHEDULING_PENDING", 
+                "AGENT_SCHEDULING", 
+                "AGENT_EXECUTING_PENDING", 
+                "AGENT_EXECUTING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT_PENDING", 
+                "AGENT_STAGING_OUTPUT", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT_PENDING", 
+                "UMGR_STAGING_OUTPUT", 
+                "DONE"
+            ], 
+            "stderr": "[... CONTENT SHORTENED ...]\nat your option) any later version.\n\nGROMACS:      gmx mdrun, VERSION 5.0\nExecutable:   /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/bin/gmx\nLibrary dir:  /usr/local/packages/gromacs/5.0/INTEL-140-MVAPICH2-2.0/share/gromacs/top\nCommand line:\n  gmx mdrun -s topol.tpr -c md.out\n\n\nNumber of hardware threads detected (20) does not match the number reported by OpenMP (1).\nConsider setting the launch configuration manually!\nReading file topol.tpr, VERSION 5.0 (single precision)\nThe number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 8\nUsing 1 MPI process\nUsing 8 OpenMP threads \n\nNon-default thread affinity set probably by the OpenMP library,\ndisabling internal thread affinity\nstarting mdrun 'Protein in water'\n460 steps,      0.9 ps.\n\nWriting final coordinates.\n\n               Core t (s)   Wall t (s)        (%)\n       Time:       16.904       32.034       52.8\n                 (ns/day)    (hour/ns)\nPerformance:        2.487        9.651\n\ngcq#189: \"It's So Fast It's Slow\" (F. Black)\n\n", 
+            "stderr_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000014/STDERR", 
+            "stdout": "", 
+            "stdout_file": "/worka/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000/unit.000014/STDOUT", 
+            "target_state": "DONE", 
+            "type": "unit", 
+            "uid": "unit.000014", 
+            "umgr": "umgr.0000", 
+            "unit_sandbox": "gsisftp://supermic.cct-lsu.xsede.org:2222/work/vivek91/radical.pilot.sandbox/rp.session.js-17-212.jetstream-cloud.org.vivek91.017453.0009/pilot.0000//unit.000014/"
+        }
+    ]
+}
