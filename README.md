@@ -33,7 +33,7 @@ contents.
 ### Experiments ```5-B-1, 5-B-2```:
 
     ```
-    radical.entk         : ipdps2017-experiments-gpu (tag)
+    radical.entk         : ipdps2017-experiments-nongpu (tag)
     radical.pilot        : 0.47-v0.46.2-15-g62a193b@devel
     saga                 : 0.47-v0.46-5-g74fc381@devel
     radical.utils        : 0.47-v0.46-10-gc515db1@devel
@@ -42,7 +42,7 @@ contents.
 ### Experiment ```5-C-1```:
 
     ```
-    radical.entk         : ipdps2017-experiments-nongpu (tag)
+    radical.entk         : ipdps2017-experiments-gpu (tag)
     radical.pilot        : 0.47-v0.46.2-93-g379bd68@feature-gpu  
     saga                 : 0.47-v0.46-23-g21cb4e9@feature-gpu
     radical.utils        : 0.47-v0.46-10-gc515db1@devel
