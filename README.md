@@ -24,7 +24,7 @@ contents.
 ### Experiments ```5-A-2-1``` to ```5-A-2-6```:
 
     ```
-    radical.entk         : arch/v0.6 (7a88ace6b8cf1a3e4514b5b6fd5cc7ff3a343356)
+    radical.entk         : ipdps2017-experiments-nongpu (tag)
     radical.pilot        : 0.46.2
     saga                 : 0.46.1
     radical.utils        : 0.46.2
